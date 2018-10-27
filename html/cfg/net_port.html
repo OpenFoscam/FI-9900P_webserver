@@ -1,0 +1,48 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="NetPortS"></div></strong></font></legend>  
+	<div class="config_content">
+	    <div class="login"></div>
+	    <div class="item" >
+	       
+	           <div class="item_R">
+	               <input id="netportRf" type="button" class="logo_refresh" />
+                   <input id="netportSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div>
+	    
+	    <table id="netpttab" class="bssystab">
+	    <tr>
+	        <th width="180" id="SysiphttpP" class="table_left_bgcolor"></th>
+	        <th><input  class="select"  maxlength="5" id="SysipHPort" onKeyUp="rpPos(this,/[^\d]/g,'');if(value*1>65533)value=65533;if((value*1==10000)||(value*1==10001)||(value*1==50021))value=88" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>
+	        </th>
+	    </tr>
+	    <tr style="display:none;">
+	        <th width="180" id="SysipMedioP" class="table_left_bgcolor"></th>
+	        <th><input  class="select"  maxlength="5" id="SysipMPort" onKeyUp="rpPos(this,/[^\d]/g,'');if(value*1>65533)value=65533;if((value*1==10000)||(value*1==10001)||(value*1==50021))value=88" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>
+	        </th>
+	    </tr>
+	    <tr>
+	        <th width="180" id="SysipHttpsPort" class="table_left_bgcolor"></th>
+	        <th>
+	            <input class="select" maxlength="5" id="SysipHSPort" onKeyUp="rpPos(this,/[^\d]/g,'');if(value*1>65533)value=65533;if((value*1==10000)||(value*1==10001)||(value*1==50021))value=443" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>
+	        </th>
+	    </tr>
+	    </table>
+	    <table id="netonviftab" class="bssystab">
+        <tr id ="net_onvifporttr">
+	        <th width="180" id="SysipOnvifPort" class="table_left_bgcolor"></th>
+	        <th>
+	            <input class="select" maxlength="5" id="SysipOfPort" onKeyUp="rpPos(this,/[^\d]/g,'');if(value*1>65533)value=65533;if((value*1==10000)||(value*1==10001)||(value*1==50021))value=888" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>
+	        </th>
+	    </tr>
+	    <tr id="RtspPortShow" style="display:none;">
+	        <th width="180" id="SysipRtspPort" class="table_left_bgcolor"></th>
+	        <th>
+	            <input class="select" maxlength="5" id="SysipRTPort" onKeyUp="rpPos(this,/[^\d]/g,'');if(value*1>65533)value=65533;if((value*1==10000)||(value*1==10001)||(value*1==50021))value=554" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>
+	        </th>
+	    </tr>
+	    </table>
+	    <div id="netPortResult"></div>
+    </div>
+</fieldset> 

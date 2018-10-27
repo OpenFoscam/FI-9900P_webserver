@@ -1,0 +1,30 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div>Onvif</div></strong></font></legend>  
+	<div class="config_content">
+	    <div class="login"></div>
+	    <div class="item" >
+	       
+	           <div class="item_R">
+	               <input id="netonvifRf" type="button" class="logo_refresh" />
+                   <input id="netonvifSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div>
+        <div><div id="enableOnvifTip" style="float:left">是否启用Onvif</div> <input type="checkbox" id="enableOnvif" style="float:left;margin-top:5px"></div>
+	    <table id="netonviftab1" class="bssystab">
+        <tr id ="net_onvifporttr1">
+	        <th width="180" id="SysipOnvifPort1" class="table_left_bgcolor"></th>
+	        <th>
+	            <input class="select" maxlength="5" id="SysipOfPort1" onKeyUp="rpPos(this,/[^\d]/g,'');if(value*1>65533)value=65533;if((value*1==10000)||(value*1==10001)||(value*1==50021))value=888" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>
+	        </th>
+	    </tr>
+	    <tr id="RtspPortShow1" style="display:none;">
+	        <th width="180" id="SysipRtspPort1" class="table_left_bgcolor"></th>
+	        <th>
+	            <input class="select" maxlength="5" id="SysipRTPort1" onKeyUp="rpPos(this,/[^\d]/g,'');if(value*1>65533)value=65533;if((value*1==10000)||(value*1==10001)||(value*1==50021))value=554" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>
+	        </th>
+	    </tr>
+	    </table>
+	    <div id="netonvifResult"></div>
+    </div>
+</fieldset> 

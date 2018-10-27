@@ -1,0 +1,44 @@
+﻿<div class="config_cont_hauto">
+	<div class="login"></div>
+	<div class="item" >
+	    <div class="item_R">
+	        <div id="netsoftAPRf" class="logo_refresh"></div>
+	        <div id="netsoftAPSave" class="logo_save"></div>
+	    </div>
+	</div>
+	<div class="bssysdiv"></div> 
+	<table id="tbNetSoftAP" class="bssystab">
+	    <tr>
+            <th id="thSoftSSIDT" width="180" class="table_left_bgcolor">SSID</th>
+	        <th id="thSoftSSIDV"></th>
+	    </tr>
+        <tr>
+            <th id="thSoftEncT" class="table_left_bgcolor"></th>
+            <th id="thSoftEncV"></th>
+        </tr>
+        <tr>
+            <th id="thSoftOldPas" class="table_left_bgcolor"></th>
+            <th>
+                <input type="password" id="iptSoftPasOld" onkeyup="if(event.keyCode != 9){chkpwd(this,divSoftPasLev);}" class="select" />
+            </th>
+        </tr>
+        <tr id="trNetSoft" style="display:none;">
+            <th id="thSoftPasNew" class="table_left_bgcolor"></th>
+            <th>
+                <input type="password" id="iptSoftPasNew" onkeyup="if(event.keyCode != 9){chkpwd(this,divSoftPasLev);}" class="select" />
+            </th>
+        </tr>
+        <tr>
+            <th id="thSoftPasLev" class="table_left_bgcolor"></th>
+            <th>
+                <div id="divSoftPasLev" style="width:150px;margin-left:20px;background:url(../images/pwd_no.gif)no-repeat center;height:15px;line-height:15px;"></div>
+            </th>
+        </tr>
+        <tr>
+            <th id="thSoftPasCof" class="table_left_bgcolor"></th>
+            <th>
+                <input type="password" id="iptSoftPasCof" class="select" />
+            </th>
+        </tr>
+    </table>
+</div>

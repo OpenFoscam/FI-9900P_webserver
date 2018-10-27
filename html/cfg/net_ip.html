@@ -1,0 +1,47 @@
+<!--<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="NetIPt"></div></strong></font></legend>-->  
+    <div class="config_cont_hauto">
+
+        <div class="login"></div>
+        <div class="item" >
+
+               <div class="item_R">
+                   <input id="netipRf" type="button" class="logo_refresh" />
+                   <input id="netIpSave" type="button" class="logo_save" />
+               </div>
+        </div>
+        <div class="bssysdiv"></div>
+    
+     
+   
+       <div style="text-align:left;clear:left; float:left; font-family:Arial;" id="netDhcpToIP" class="sushfdivw"></div><input id="netIpISDHCP" type="checkbox" style="float:left; margin-top:8px;"/>
+       <table id="netIpTable" class="bssystab" style="font-family:Arial">
+          <tr>
+            <th width="180" id="netIpAddr" class="table_left_bgcolor"></th>
+            <th> <input class="select"  id="netIp_IP" maxlength="15" onkeyup="rpPos(this,/[^0-9\.]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9\.]/g,''))"/></th>
+          </tr>
+          <tr>
+            <th id="netIpSubMask" class="table_left_bgcolor"></th>
+            <th><input class="select" id="netIp_MASK" maxlength="15" onkeyup="rpPos(this,/[^0-9\.]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9\.]/g,''))"/></th>
+          </tr>
+          <tr>
+            <th id="netIpGateway" class="table_left_bgcolor"></th>
+            <th><input class="select" id="netIp_GATE" maxlength="15" onkeyup="rpPos(this,/[^0-9\.]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9\.]/g,''))"/></th>
+          </tr>
+          <tr>
+            <th id="netIpPrimDNS" class="table_left_bgcolor"></th>
+            <th><input class="select" id="netIp_DNS1" maxlength="15" onkeyup="rpPos(this,/[^0-9\.]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9\.]/g,''))"/></th>
+          </tr>
+          <tr>
+            <th id="netIpSecDNS" class="table_left_bgcolor"></th>
+            <th><input class="select" id="netIp_DNS2"  maxlength="15" onkeyup="rpPos(this,/[^0-9\.]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9\.]/g,''))"/></th>
+          </tr>
+      
+        </table>
+        <div style="height:20px; overflow:hidden;"></div>
+        <div id="divSetGuidSoftFinish" style="display:none;color:Red;text-align:left;"></div>
+        <div style="width:100%;text-align:left;clear:left;float:left;font-family:Arial;display:none;" id="netipword" class="sushfdivw"></div>
+        <div id="netIPResult" style="text-align:left;margin-top:20px;"></div>
+   
+	</div>
+<!--</fieldset>-->

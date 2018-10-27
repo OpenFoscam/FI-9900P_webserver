@@ -1,0 +1,79 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="legRcPlan"></div></strong></font></legend>
+
+	<div class="config_content" style="overflow:scroll;overflow-x:hidden;height:460px;width:800px;">
+	    <div class="login"></div>
+	    <div class="item_S" >
+
+	           <div class="item_R">
+                   <input id="rcplanRf" type="button" class="logo_refresh" />
+                   <input id="rcPlanSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv_S"></div> 
+	    
+	   <div id="RcplanEnable">
+	    <div style="text-align:left;clear:left; float:left;" id="Rcplan_Enable"></div><input id="rcplan_enable" type="checkbox" style="float:left; margin-top:8px;"/>
+	     </div><br />
+         <table  id="rcplanPumptab" class="bssystab" style="width: 729px;">
+            <tbody><tr>
+	            <th width="200" id="RcPumpFrame" class="table_left_bgcolor"></th>
+	            <th>
+	                <select id="rcPumpFrameOpt" class="select">
+	                    <option id="rcPFNoTS" value="0"></option>
+                        <option id="rcPFIsTS" value="1"></option>
+	                </select>
+	            </th>
+	        </tr>
+        </tbody></table><br/>
+	   <table id="rcplantabl" class="bssystab" style="width:729px;">
+	      <tr id = "record_levtr" style="display:none;">
+	        <th width="200" id="RcRecordLev" class="table_left_bgcolor"></th>
+	        <th><select id="record_lev"  class="select">
+	            <option id="is30_record" value="0">30</option>
+	            <option id="is24_record" value="1">24</option>
+	            <option id="2" value="2">15</option>
+	            <option id="3" value="3">8</option>
+	            <option id="4" value="4">4</option>
+	            <option id="5" value="5">1</option>
+	            </select></th>
+	      </tr>
+	      <tr id = "rcfulltr">
+	        <th width="200" id="RcFullModle" class="table_left_bgcolor"></th>
+	        <th><select id="rcfull_modle" class="select">
+	        	<option id="rcfull_cover" value="0"></option>
+	            <option id="rcfull_stop" value="1"></option>
+	        </select></th>
+	      </tr>
+	      <tr id = "rcenableaudiotr">
+	        <th id="RcEnAudio" class="table_left_bgcolor"></th>
+	        <th><select id="rcenableaudio" class="select">
+	        	<option id="enableaudio" value="1"></option>
+	            <option id="disableaudio" value="0"></option>
+	        </select></th>
+	      </tr>
+          <tr id = "rcStream">
+	        <th id="RcdStream" class="table_left_bgcolor"></th>
+	        <th><select id="RcStreamSelect" class="select">
+	        	<option id="rsMain" value="0"></option>
+	            <option id="rsSub" value="1"></option>
+	        </select></th>
+	      </tr>
+	    </table>
+	    
+
+	    
+	    <div id="RTAmDiv">
+	    <div style="width:19px; height:18px;overflow:hidden;float:left;margin:6px 10px 0px 300px; background:url(../../images/time.gif); display:inline;"></div><div style="height:40px; float:left;overflow:hidden; " id="RTAmVCBitmap"></div>
+	    <div style="height:240px;font-family:Arial;">
+	    	<div id="RTAmXq" style="float:left;clear:left; width:57px; height:200px;"></div>
+	        <div style="float:left; background:url(../../images/cb3.gif) repeat">
+	        	<div id="RTAmHead" style="height:23px;+height:25px;"></div>
+	            <div id="RTam_DivBox"></div>
+	        </div>
+	    </div>
+	    </div>
+        <div id="rcPlanNotice" style="float:left;font-family:Arial;"></div>
+        <br/><div id="rcPlanNotice2" style="float:left;font-family:Arial;"></div>
+	</div>
+</fieldset> 

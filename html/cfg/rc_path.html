@@ -1,0 +1,45 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="RcVPPath"></div></strong></font></legend>  
+	<div class="config_content">
+	    <div class="login"></div>
+	    <div class="item" >
+	  
+	           <div class="item_R">
+                   <input id="rcpathRf" type="button" class="logo_refresh" />
+                   <input id="rcPathSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div> 
+	        <table id="netTable" class="bssystab" style="font-family:Arial;">
+	            <tr id="rcPathSD">
+	                <th id="rcPathVP" class="table_left_bgcolor"></th>
+	                <th>
+                        <select class="select" id="RcPath">
+                            <option id="rcPathNull" value="65535"></option>
+	        	            <option id="rcPathSDCard" value="0"></option>
+	          	            <!--<option id="rcPathSDir" value="1"></option>-->
+	          	            <option id="rcPathFTP" value="2">FTP</option>
+                            <option id="rcPathSDAndCloud" value="3"></option>
+	                    </select>
+	                    <div id="rcPathSDirF" style="display:none;"></div>
+	                    <div id="rcPathSDCardF" style="display:none;text-align:left;color:#FF0000;"></div>
+                        <div id="divRcPathCloudTips" style="text-align:left;display:none;"></div>
+                        <div id="divRcPathSoftTips" style="display:none;text-align:left;color:#FF0000;"></div>
+                    </th>
+	            </tr>
+	      <tr id="rcPathps0">
+	      <th id="rcPathlo" class="table_left_bgcolor"></th>
+	      <th>
+	        <input class="select" id="rcPathsd" style="width: 120px; " />
+	        <button id="btnSelPath" style="margin-left:20px;"></button>
+            <button id="btnLocalFolder" style="margin-left:20px;"></button>
+	      </th>
+	      </tr>
+	    </table>
+	    <div style="float:left;font-family:Arial;text-align:left;display:none" id="rcPathNote"></div>
+	    <div style="float:left;font-family:Arial;text-align:left;" id="rcPathps1"></div>
+        <br />
+	    <div style="float:left;font-family:Arial;text-align:left;" id="rcPathps2"></div>
+	    <div id="rcPathResult"></div>
+	</div>
+</fieldset>

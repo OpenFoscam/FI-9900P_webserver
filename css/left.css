@@ -1,0 +1,31 @@
+@charset "utf-8";
+.configDiv{padding-top:15px; color:#ffffff; font-size:13px; padding-left:45px; font-family:Arial;}
+.notselected{background-image: width:206px; height:30px; font-size:14px;color:#ffffff;line-height:30px; color:#000; font-family:Arial, Helvetica, sans-serif}
+.selecteda{ width:206px; height:30px; font-size:14px; line-height:30px;}
+.selectedb{ width:206px; height:30px; font-size:15px; line-height:30px;}
+.notselected{text-align:left;text-indent: 80px;}
+.leftCenter{width:100%; position:absolute; top:34px; bottom:72px;_height:100%;}
+.calendarDiv{height:182px; width:208px;position:relative; overflow:hidden;}
+
+.pathConfigLeft{width:40px; height:40px; cursor:pointer;}
+.pathConfigRight{width:53px; height:55px; float:left;}
+.browerBtn{background:url(../images/browse.gif); width:40px; height:17px; float:left; margin-left:10px;}
+.kinescope{width:64px; height:83px; float:left; clear:left;}
+ .button{background:url(../../images/button.gif)0px 0px no-repeat;width:117;height:21px;}
+.leftstyle1{}
+
+
+.pathconfig{height:35px;}
+#configPath123{margin-left:240px; margin-top:30px;height:30px; font-size:14px;}
+.pathcontent{margin-left:240px; border:1px solid #CCC; width:540px;height:200px;}
+#recordfile,#longfiledown,#getimg,#filetype,#recordtime{font-size:12px;  margin-left:10px;float:left;width:150px; height:20px;}
+#Path_2,#Path_3,#Path_1{width:260px;height:17px; float:left;}
+#minute{font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+#minuteTime{width:70px;height:17px;}
+.pathSave{background:url(../images/pathSave.png) no-repeat; width:75px; height:28px;margin:5px 0px 0px 340px; cursor:pointer;font-size:14px;color:#FFFFFF; text-align:center;}
+#Path_fileType{ width:70px; float:left;height:20px;}
+#recordtime{margin-left:20px;width:80px;margin-top:3px;}
+
+#rcListT tr{height:20px;overflow:hidden;}
+#usrBsTable,#ptzctfield{+margin-left:50px;_margin-left:25px;}
+

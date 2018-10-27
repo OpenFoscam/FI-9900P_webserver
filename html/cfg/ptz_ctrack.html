@@ -1,0 +1,111 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="PTZCtrackt"></div></strong></font></legend>  
+
+	<div class="config_content" style="overflow:scroll;overflow-x:hidden;height:460px;width:747px;"> 
+	    <div class="login"></div>
+	    <div class="item" >
+
+	           <div class="item_R">
+                   <input id="ptzctrackRf" type="button" class="logo_refresh" />
+                   <input id="ptzCTSave" type="button" class="logo_save" style="display:none;" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv" ></div>
+        <!-- ctrack mode setting -->
+	     <table class="bssystab">
+        <!-- ctrack mode -->
+	     <tr>
+	        <th width="150" id="ptzMode" class="table_left_bgcolor"></th>
+	        <th><div id="PTZCtrack3" style="float:left;margin-left:67px;">
+	            <select id="ctrack_mode" style="float:left;width:200px"></select>
+	            </div>
+	        </th>
+	      </tr>
+         <!-- ctrack value -->
+	     <tr>
+	        <th width="150" id="ptzValue" class="table_left_bgcolor"></th>
+	        <th>
+            <!-- ctrack time -->
+            <div id="ptzTime" style="float:left;display:none;">
+              <select id="ctrack_time" style="float:left;margin-left:67px; margin-top:4px;width:200px;">
+              </select>
+              <br/>
+              <div id="ct_Time" style=" width:105px; height:25px; overflow:hidden; float:left; margin-left:65px; margin-bottom:2px;display:none;">
+                <div>
+                  <input id="ct_time" onkeyup="rpPos(this,/[^\d]/g,''); if(value*1>10080)value=10080; if(event.keyCode != 9){chktime(this,chkTimeResult);}" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="5" style="width:90px;float:left;margin-left:2px;"/>
+                </div>
+              </div>
+              <div id="chkTimeResult" style=" width:auto; height:25px;overflow:hidden;float:left;text-align:left;display:none;"></div>
+              <div id="divPtzCtrTimeTips" style="width:auto;height:25px;float:left;text-align:left;display:none"></div>
+            </div>
+            <!-- ctrack loop -->
+            <div id="ptzLoop" style="float:left;">
+              <div id="ctrack_Loop" style=" width:105px; height:25px; overflow:hidden; float:left; margin-left:58px;">
+                <div>
+                  <input id="cl_loop" onkeyup="rpPos(this,/[^\d]/g,''); if(value*1>100)value=100;" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="3" style="width:90px;float:left;margin-left:8px;"/>
+                </div>
+              </div>
+              <div id="ptzLoopT" style=" width:auto; height:25px;overflow:hidden;float:left;text-align:left;"></div>
+            </div>
+	        </th>
+	      </tr>
+          <!-- save -->
+          <tr>
+	        <th width="150" id="th1" class="table_left_bgcolor"></th>
+	        <th><button id="ctrack_save" style="margin-left:55px; margin-top:2px; margin-bottom:3px"></button>
+	        </th>
+	      </tr>
+	      </table>
+          <div class="space" ></div>
+	     <table class="bssystab">
+	     <tr>
+	        <th width="150" id="ptzCTName" class="table_left_bgcolor"></th>
+	        <th><div id="PTZCtrack1">
+	                <select id="ctrack_name" style="float:left;margin-left:40px;width:200px;margin-top:3px;"></select>
+	                <button id="ctrack_addN" style="float:left;margin-left:20px;margin-top:1px;text-align:center;"></button>
+	                <button id="ctrack_subN" style="float:left;margin-left:15px;margin-top:1px;text-align:center;"></button>
+                    <button id="ctrack_saveN" style="float:left;margin-left:15px;margin-top:1px;text-align:center;"></button>
+                </div>
+	            <div id="PTZCtrack2" style="display:none">
+	                <input id="PTZCtr_Name" style="margin-left:-60px;width:200px;"/>
+	                <button id="PTZCtr_OK"  style="margin-left:40px;margin-top:2px;"></button>
+	                <button id="PTZCtr_CAN" class="rtstyle3" style="margin-left:20px;margin-top:2px;"></button>
+                    <br/><div id="ptzCtrNameTip" style="float:left; margin-left:20px;"></div>
+                </div>
+	        </th>
+	      </tr>
+	      </table>
+	     <div class="space" ></div> 
+	     
+         <div style="width:273px; height:370px;overflow:hidden;float:left;margin-left:2px;margin-top:10px;background:url(../../images/cruise_pre_bg.png);">
+         <div id="ptzCTPreN16" style="float:left;width:120px;text-align:center;height:23px;text-align:center;line-height:23px;vertical-align:middle;font-family:arial;"></div>
+         <div style="float:left;width:272px;height:332px;">
+         <table id="ptzCTyTable" width="260px" style="border-collapse:collapse;text-align:left;line-height:18px;margin-left:7px;margin-top:25px;">
+	          	<tr><td>1</td></tr>
+	            <tr><td>2</td></tr>
+	            <tr><td>3</td></tr>
+	            <tr><td>4</td></tr>
+	            <tr><td>5</td></tr>
+	            <tr><td>6</td></tr>
+	          </table>
+         </div>
+         </div>
+	     <div style=" width:160px;float:left;margin-top:120px;">
+	     	<button id="ctrack_addP" style=" width:140px;" disabled="disabled"></button><br />
+	        <button id="ctrack_subP" class="rtstyle3" style=" width:140px;margin-top:10px;" disabled="disabled"></button><br />
+	        <button id="ctrack_subFO" class="rtstyle3" style=" width:140px;margin-top:10px;" disabled="disabled"></button><br />
+	        <button id="ctrack_subDep" class="rtstyle3" style=" width:140px;margin-top:10px;" disabled="disabled"></button><br />
+	     </div>
+         <div style="width:273px; height:370px;overflow:hidden;float:left;margin-left:2px;margin-top:10px;background:url(../../images/cruise_pre_bg.png);">
+         <div id="ptzCTPreN8" style="float:left; padding-left:10px; height:23px;text-align:center;line-height:23px;vertical-align:middle;font-family:arial;"></div>
+         <div style="float:left;width:272px;height:330px;">
+         <div id="ctPreT" style="width:134px;float:left; text-align:center;height:23px;text-align:center;line-height:23px;vertical-align:middle;"></div><div id="ctDtT" style="width:135px;float:right; text-align:center;height:23px;text-align:center;line-height:23px;vertical-align:middle;"></div>
+         <table id="ptzCTxTable" width="260px" style="border-collapse:collapse;text-align:left;line-height:18px;margin-left:7px;margin-top:2px;float:left;">
+	          	<tr><td>1</td></tr>
+	            <tr><td>2</td></tr>
+	            <tr><td>3</td></tr>
+	          </table>
+         </div>
+         </div>
+	 </div>
+</fieldset>  	 

@@ -1,0 +1,163 @@
+<!--<fieldset style="height:530px;overflow:scroll;overflow-x: hidden; overflow-y: auto;">  
+	<legend><font size=5px color="#4793e7"><strong><div id="NetWifit"></div></strong></font></legend>  -->
+	<div class="config_cont_hauto" style="overflow:scroll;overflow-x:hidden;height:400px;width:730px;">
+    <div class="login"></div>
+    <div class="item" >
+
+           <div class="item_R">
+               <input id="netwifiRf" type="button" class="logo_refresh" />
+               <input id="NWifiSave" type="button" class="logo_save" />
+           </div>
+    </div>
+    <div class="bssysdiv"></div> 
+    <div style="float:left;margin-top:10px; width:400px;">
+        <div style="text-align:left;float:left;margin-left:30px;font-weight:bold;font-size:medium;" id="netWifiList"></div>
+        <div style=" float:right; ">
+            <button id="refwifilist"></button>
+        </div>
+        <div id="netwifiIs" style="height:30px; overflow:hidden; float:right; margin-right:20px;display:none; ">
+            <button id="netwifi_is"></button>
+        </div>
+        <div id="netwifiNo" style=" height:30px; overflow:hidden; display:none; float:right; margin-right:20px;">
+            <button id="netwifi_no"></button>
+        </div>
+        <div id="netwifidiv" style=" clear:left;float:left;width:370px;">
+            <!--<table width="400" style="border-collapse:collapse;  float:left; " border="1" bordercolor="#70c8e6">
+                <tr height="33"><td width="160"><div id="netSSID"></div></td><td width="120" id="netwifijmfs"></td><td id="netwifixhqd"></td></tr>
+            </table>-->
+            <table width="400px" style="border-collapse:collapse;float:left;font-family:Arial;line-height:28px;" border="1" bordercolor="#70c8e6">
+                <thead>
+                    <tr height="33"><td width="160"><div id="netSSID"></div></td><td width="120" id="netwifijmfs"></td><td id="netwifixhqd"></td></tr>
+                </thead>
+                <tbody id="netwffield">
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                    <tr height="28"><td width="160"></td><td width="120"></td><td></td></tr>
+                </tbody>
+            </table>
+            <div id="wiftfyHead" style="width:370px;float:left; margin-left:30px;"><div style="float:left; margin-left:20px"></div><div style="text-align:left;float:left; margin-left:20px"></div></div>
+        </div>
+    </div> 
+    <div style="float:right;width:281px;_width:265px;height:415px;background-color:#bde6f3;"> 
+        <table id="wfIsTable"  style="float:left;margin:0px 0px 0px 8px;border-collapse:collapse;text-align:left;" border="1" bordercolor="#70c8e6">
+             <tr>
+                 <th width="90">SSID</th>
+                 <th width="170">
+                    <input id="netwifissid" style="width:135px;"/>
+                 </th>
+             </tr>
+             <tr>
+                 <th id="wifiP"></th>
+                 <th>
+                     <select id="netwifiP" style="width:143px;">
+                         <option value="0"></option>
+                         <option value="1" id = "wifi_WEP";>WEP</option>
+                         <option value="2" id = "wifi_WPA";>WPA</option>
+                         <option value="3" id = "wifi_WPA2";>WPA2</option>
+                         <option value="4" id = "wifi_WPAWPA2";>WPA/WPA2</option>
+<!----                         <option value="5" id = "wifi_WPA1_TKIP";>WPA1_TKIP</option>
+                         <option value="6" id = "wifi_WPA1_AES";>WPA1_AES</option>
+                         <option value="7" id = "wifi_WPA2_TKIP";>WPA2_TKIP</option>
+                         <option value="8" id = "wifi_WPA2_AES";>WPA2_AES</option>    ---->
+                     </select>
+                 </th>
+             </tr>
+        </table>
+        <table id="wfweptab" style="float:left;margin:0px 0px 0px 8px;border-collapse:collapse;text-align:left;display:none;" border="1" bordercolor="#70c8e6">
+            <tr>
+                <th width="90" id="wifiyzsty"></th>
+                <th width="170">
+                    <select id="netwifityp" style="width:143px;">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th id="wifikgs"></th>
+                <th>
+                    <select id="netwififom" style="width:143px;">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th id="wifiselec"></th>
+                <th>
+                    <select id="netwifidk" style="width:143px;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th id="wifiPSK1"></th>
+                <th>
+                    <input id="netkey1"  style="width:135px;" type="password" maxlength="63"/>
+                    <select id="netkey1len" style="width:143px;">
+                        <option value="64">64bits</option>
+                        <option value="128">128bits</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th id="wifiPSK2"></th>
+                <th>
+                    <input id="netkey2"  style="width:135px;" type="password" maxlength="63"/>
+                    <select id="netkey2len" style="width:143px;">
+                        <option value="64">64bits</option>
+                        <option value="128">128bits</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th id="wifiPSK3"></th>
+                <th>
+                    <input id="netkey3"  style="width:135px;" type="password" maxlength="63"/>
+                    <select id="netkey3len" style="width:143px;">
+                        <option value="64">64bits</option>
+                        <option value="128">128bits</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th id="wifiPSK4"></th>
+                <th>
+                    <input id="netkey4"  style="width:135px;" type="password" maxlength="63"/>
+                    <select id="netkey4len" style="width:143px;">
+                        <option value="64">64bits</option>
+                        <option value="128">128bits</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+        <table id="wfwaptab" style="float:left;margin:0px 0px 0px 8px;display:none;border-collapse:collapse;text-align:left;" border="1" bordercolor="#70c8e6">
+            <tr>
+                <th width="90" id="wifiPSDK"></th>
+                <th width="170">
+                    <input id="netwifipsk" type="password" style="width:135px;" maxlength="63"/>
+                </th>
+            </tr>
+        </table>
+        <div id="WiFiTestDiv" style="float:left;width:280px;padding-left:8px;text-align:left;display:none;">
+            <div style="text-align:left;margin: 5px 0;"><button id="WiFiTest"></button></div>
+            <textarea style="height:60px;width:255px;overflow-y:auto;resize:none;" id="WiFiTestResult" disabled="disabled"></textarea>
+        </div>
+        <div style="text-align:left;margin-right:20px; float:right;display:none;" id="netwifiIsEb"></div>
+        <input id="wifiIsEnable" type="checkbox" style="float:right;margin-right:3px;display:none; "/>
+        <div id="netWifiPwdTip" style="text-align:left;padding-right:15px;"></div>
+    </div>
+    <div id="netWifiResult"></div>
+    </div> 
+<!--</fieldset>-->

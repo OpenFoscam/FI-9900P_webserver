@@ -1,0 +1,88 @@
+<fieldset>
+    <legend><font size=5px color="#4793e7"><strong><div id="legNetCloud"></div></strong></font></legend>
+	<div class="config_content" style="width:742px;">
+	    <div class="login"></div>
+	    <div class="item" style="width:742px;">
+	        <div class="item_N">
+                <input id="netcloudRf" type="button" class="logo_refresh" />
+                <input id="NetCloudSave" type="button" class="logo_save" />
+	        </div>
+	    </div>
+	    <div class="bssysdiv" style="width:742px;"></div>
+	     
+	      
+	    <div style="text-align:left;clear:left; float:left; font-family:Arial;" id="netcloudisEnb" class="sushfdivw"></div><input id="netcloudischeck" type="checkbox" style="float:left; margin-top:8px;"/>
+	    <br />
+	    <table id="NetCloudTabel" class="bssystab" style="font-family:Arial;width:742px;">
+	        <tr>
+	            <th width="210" id="netCarryoperator" class="table_left_bgcolor"></th>
+	            <th>
+                    <!--<input type="text" class="select" id="netCarry_operator" disabled="disabled" />-->
+                    <select id="selNet_Operator" class="select"></select>
+                    <br />
+                    <div id="divNetCloudTips" style="font-family:Arial;text-align:left;line-height:22px;"></div>
+	            </th>
+	        </tr>
+            <tr id = "netTotalValumeTR">
+	            <th width="210" id="netTotalValume" class="table_left_bgcolor"></th>
+	            <th id="netTotal_Valume"></th>
+	        </tr>
+	        <tr id = "netUsedValumeTR" style="display:none">
+	            <th width="210" id="netUsedValume" class="table_left_bgcolor"></th>
+	            <th id="netUsed_Valume"></th>
+	        </tr>
+            <tr id="netRemainVolumeTR">
+                <th width="210" id="netRemainVolume" class="table_left_bgcolor"></th>
+                <th id="netRemain_Volume"></th>
+            </tr>
+            <tr>
+	            <th width="210" id="netCloudState" class="table_left_bgcolor"></th>
+	            <th> <input class="select" style="float:left;margin-left:15px;" id="netCloud_State" maxlength = "128" disabled="disabled" readonly=""/></th>
+	        </tr>
+        </table>
+
+        
+        <table id="tbAuth" class="bssystab" style="font-family:Arial;width:742px;margin-top:20px;">
+	        <tr id = "netAuthorTR">
+	            <th width="210" id="netAuthorization" class="table_left_bgcolor"></th>
+	            <th> 
+	                <input class="select" style="float:left;margin-left:15px;display:none;" id="netAuthor"  maxlength = "256" disabled="disabled" readonly=""/>
+	                <button style="margin-left:15px;margin-top:3px;text-align:center;" id="btnopennetAuthor"></button>
+	                </br>
+	                <div id = "netAuthoriza_CodeTip" style="font-family:Arial;text-align:left;line-height:22px;"></div>
+	            </th>
+	        </tr>
+	        <tr id = "netAuthorizaCodeTR">
+	            <th width="210" id="netAuthorizaCode" class="table_left_bgcolor"></th>
+	            <th>
+	                <input type="text" class="select" maxlength="128" id="netAuthoriza_Code">
+                    <button style="margin-left:10px;" id="btnCloudSubmit"></button>
+	            </th>
+	        </tr>
+	        <tr id="getaccessTokenTR" style="display:none;">
+	            <th width="210" id="getaccesToken" class="table_left_bgcolor"></th>
+	            <th >
+	                <button style="margin-left:5px;margin-top:3px;text-align:center;float:left;" id="getaccess_Token"></button> 
+	            </th>
+	        </tr>
+	        <tr id = "accessTokenTR" style="display:none;">
+	            <th width="210" id="accessToken" class="table_left_bgcolor"></th>
+	            <th>
+	                <input class="select" id="access_Token" maxlength = "256" disabled="disabled" readonly="" />
+	            </th>
+	        </tr>
+	        <tr id="netStateInfoTR" style="display:none;">
+	            <th width="210" id="netStateInfo" class="table_left_bgcolor"></th>
+	            <th >
+	                <button style="margin-left:5px;margin-top:3px;text-align:center;float:left;" id="btnnetStateInfo"></button> 
+	            </th>
+	        </tr>
+	        <tr id = "lastTR" style="display:none;">
+	            <th width="210" id="last" class="table_left_bgcolor"></th>
+	            <th>
+	                <button style="margin-left:5px;margin-top:3px;text-align:center;float:left;" id="btnnetcloudtest"></button>
+	            </th>
+	        </tr>
+	    </table>
+	</div>
+</fieldset> 

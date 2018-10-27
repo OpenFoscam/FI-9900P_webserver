@@ -1,0 +1,173 @@
+<fieldset>  
+	<legend><font size="5px" color="#4793e7"><strong><div id="Multidevice"></div></strong></font></legend>  
+
+	<div class="config_content" style="overflow:scroll;overflow-x:hidden;height:460px;width:730px;">
+	    <div class="login"></div>
+	    <div class="item" >
+	           <div id="Multidevice" class="logo_title"></div>
+	           <div class="item_R">
+                   <input id="bsmultiRf" type="button" class="logo_refresh" style="display:none;" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div> 
+	  	<table class="bssystab">
+	           <tr height="100"><th id="bs_mullist" width="180"></th>
+	               <th><select id="bsmullist" style="width:400px; height:100px;" readonly="readonly" multiple="true"></select><button id="bsmulrf" style="margin-left:10px;"></button></th>
+	           
+	    </tr>
+	    <tr><th id="bsmul1"></th>
+	    <th id="bs1_text"></th></tr>
+	    <tr><th ><a id="bsmul2" href="javascript:;" onclick="ShowOrHide('bs_mul2');return false;"></a></th>
+	    <th id="bs2_text"></th></tr>
+        <tr id="bs_mul2_type" class="bsmul"><th id="bs2_type" style="text-align:right;padding-right:10px;"></th>
+	    <th><select id="bs2_typesel" class="select"><option value="0">MJ</option><option value="1">H264</option></select></th></tr>
+	    <tr id="bs_mul2_name" class="bsmul"><th id="bs2_name" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs2_nameput" class="select"/></th></tr>
+	    <tr id="bs_mul2_host" class="bsmul"><th id="bs2_host" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs2_hostput" class="select" maxlength="60"/></th></tr>
+	    <tr id="bs_mul2_port" class="bsmul"><th id="bs2_port" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs2_portput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul2_Mport" class="bsmul"><th id="bs2_Mport" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs2_Mportput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul2_user" class="bsmul"><th id="bs2_user" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs2_userput" class="select"/></th></tr>
+	    <tr id="bs_mul2_pwd" class="bsmul"><th id="bs2_pwd" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs2_pwdput" class="select" maxlength="12" type="password"/></th></tr>
+	    <tr id="bs_mul2_but" class="bsmul"><th></th>
+	    <th><button id="bs2_addput"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="bs2_delput"></button></th></tr>
+	    <tr><th><a id="bsmul3" href="javascript:;" onclick="ShowOrHide('bs_mul3');return false;"></a></th>
+	    <th id="bs3_text"></th></tr>
+        <tr id="bs_mul3_type" class="bsmul"><th id="bs3_type" style="text-align:right;padding-right:10px;"></th>
+	    <th><select id="bs3_typesel" class="select"><option value="0">MJ</option><option value="1">H264</option></select></th></tr>
+	    <tr id="bs_mul3_name" class="bsmul"><th id="bs3_name" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs3_nameput" class="select"/></th></tr>
+	    <tr id="bs_mul3_host" class="bsmul"><th id="bs3_host" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs3_hostput" class="select" maxlength="60"/></th></tr>
+	    <tr id="bs_mul3_port" class="bsmul"><th id="bs3_port" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs3_portput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul3_Mport" class="bsmul"><th id="bs3_Mport" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs3_Mportput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul3_user" class="bsmul"><th id="bs3_user" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs3_userput" class="select"/></th></tr>
+	    <tr id="bs_mul3_pwd" class="bsmul"><th id="bs3_pwd" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs3_pwdput" class="select" maxlength="12" type="password"/></th></tr>
+	    <tr id="bs_mul3_but" class="bsmul"><th></th>
+	    <th><button id="bs3_addput"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="bs3_delput"></button></th></tr>
+	    <tr><th><a id="bsmul4" href="javascript:;" onclick="ShowOrHide('bs_mul4');return false;"></a></th>
+	    <th id="bs4_text"></th></tr>
+        <tr id="bs_mul4_type" class="bsmul"><th id="bs4_type" style="text-align:right;padding-right:10px;"></th>
+	    <th><select id="bs4_typesel" class="select"><option value="0">MJ</option><option value="1">H264</option></select></th></tr>
+	    <tr id="bs_mul4_name" class="bsmul"><th id="bs4_name" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs4_nameput" class="select"/></th></tr>
+	    <tr id="bs_mul4_host" class="bsmul"><th id="bs4_host" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs4_hostput" class="select" maxlength="60"/></th></tr>
+	    <tr id="bs_mul4_port" class="bsmul"><th id="bs4_port" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs4_portput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul4_Mport" class="bsmul"><th id="bs4_Mport" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs4_Mportput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul4_user" class="bsmul"><th id="bs4_user" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs4_userput" class="select"/></th></tr>
+	    <tr id="bs_mul4_pwd" class="bsmul"><th id="bs4_pwd" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs4_pwdput" class="select" maxlength="12" type="password"/></th></tr>
+	    <tr id="bs_mul4_but" class="bsmul"><th></th>
+	    <th><button id="bs4_addput"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="bs4_delput"></button></th></tr>
+	    <tr><th><a id="bsmul5" href="javascript:;" onclick="ShowOrHide('bs_mul5');return false;"></a></th>
+	    <th id="bs5_text"></th></tr>
+        <tr id="bs_mul5_type" class="bsmul"><th id="bs5_type" style="text-align:right;padding-right:10px;"></th>
+	    <th><select id="bs5_typesel" class="select"><option value="0">MJ</option><option value="1">H264</option></select></th></tr>
+	    <tr id="bs_mul5_name" class="bsmul"><th id="bs5_name" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs5_nameput" class="select"/></th></tr>
+	    <tr id="bs_mul5_host" class="bsmul"><th id="bs5_host" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs5_hostput" class="select" maxlength="60"/></th></tr>
+	    <tr id="bs_mul5_port" class="bsmul"><th id="bs5_port" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs5_portput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul5_Mport" class="bsmul"><th id="bs5_Mport" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs5_Mportput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul5_user" class="bsmul"><th id="bs5_user" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs5_userput" class="select"/></th></tr>
+	    <tr id="bs_mul5_pwd" class="bsmul"><th id="bs5_pwd" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs5_pwdput" class="select" maxlength="12" type="password"/></th></tr>
+	    <tr id="bs_mul5_but" class="bsmul"><th></th>
+	    <th><button id="bs5_addput"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="bs5_delput"></button></th></tr>
+	    <tr><th><a id="bsmul6" href="javascript:;" onclick="ShowOrHide('bs_mul6');return false;"></a></th>
+	    <th id="bs6_text"></th></tr>
+        <tr id="bs_mul6_type" class="bsmul"><th id="bs6_type" style="text-align:right;padding-right:10px;"></th>
+	    <th><select id="bs6_typesel" class="select"><option value="0">MJ</option><option value="1">H264</option></select></th></tr>
+	    <tr id="bs_mul6_name" class="bsmul"><th id="bs6_name" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs6_nameput" class="select"/></th></tr>
+	    <tr id="bs_mul6_host" class="bsmul"><th id="bs6_host" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs6_hostput" class="select" maxlength="60"/></th></tr>
+	    <tr id="bs_mul6_port" class="bsmul"><th id="bs6_port" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs6_portput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul6_Mport" class="bsmul"><th id="bs6_Mport" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs6_Mportput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul6_user" class="bsmul"><th id="bs6_user" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs6_userput" class="select"/></th></tr>
+	    <tr id="bs_mul6_pwd" class="bsmul"><th id="bs6_pwd" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs6_pwdput" class="select" maxlength="12" type="password"/></th></tr>
+	    <tr id="bs_mul6_but" class="bsmul"><th></th>
+	    <th><button id="bs6_addput"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="bs6_delput"></button></th></tr>
+	    <tr><th><a id="bsmul7" href="javascript:;" onclick="ShowOrHide('bs_mul7');return false;"></a></th>
+	    <th id="bs7_text"></th></tr>
+        <tr id="bs_mul7_type" class="bsmul"><th id="bs7_type" style="text-align:right;padding-right:10px;"></th>
+	    <th><select id="bs7_typesel" class="select"><option value="0">MJ</option><option value="1">H264</option></select></th></tr>
+	    <tr id="bs_mul7_name" class="bsmul"><th id="bs7_name" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs7_nameput" class="select"/></th></tr>
+	    <tr id="bs_mul7_host" class="bsmul"><th id="bs7_host" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs7_hostput" class="select" maxlength="60"/></th></tr>
+	    <tr id="bs_mul7_port" class="bsmul"><th id="bs7_port" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs7_portput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul7_Mport" class="bsmul"><th id="bs7_Mport" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs7_Mportput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul7_user" class="bsmul"><th id="bs7_user" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs7_userput" class="select"/></th></tr>
+	    <tr id="bs_mul7_pwd" class="bsmul"><th id="bs7_pwd" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs7_pwdput" class="select" maxlength="12" type="password"/></th></tr>
+	    <tr id="bs_mul7_but" class="bsmul"><th></th>
+	    <th><button id="bs7_addput"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="bs7_delput"></button></th></tr>
+	    <tr><th><a id="bsmul8" href="javascript:;" onclick="ShowOrHide('bs_mul8');return false;"></a></th>
+	    <th id="bs8_text"></th></tr>
+        <tr id="bs_mul8_type" class="bsmul"><th id="bs8_type" style="text-align:right;padding-right:10px;"></th>
+	    <th><select id="bs8_typesel" class="select"><option value="0">MJ</option><option value="1">H264</option></select></th></tr>
+	    <tr id="bs_mul8_name" class="bsmul"><th id="bs8_name" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs8_nameput" class="select"/></th></tr>
+	    <tr id="bs_mul8_host" class="bsmul"><th id="bs8_host" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs8_hostput" class="select" maxlength="60"/></th></tr>
+	    <tr id="bs_mul8_port" class="bsmul"><th id="bs8_port" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs8_portput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul8_Mport" class="bsmul"><th id="bs8_Mport" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs8_Mportput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul8_user" class="bsmul"><th id="bs8_user" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs8_userput" class="select"/></th></tr>
+	    <tr id="bs_mul8_pwd" class="bsmul"><th id="bs8_pwd" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs8_pwdput" class="select" maxlength="12" type="password"/></th></tr>
+	    <tr id="bs_mul8_but" class="bsmul"><th></th>
+	    <th><button id="bs8_addput"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="bs8_delput"></button></th></tr>
+	    <tr><th><a id="bsmul9" href="javascript:;" onclick="ShowOrHide('bs_mul9');return false;"></a></th>
+	    <th id="bs9_text"></th></tr>
+        <tr id="bs_mul9_type" class="bsmul"><th id="bs9_type" style="text-align:right;padding-right:10px;"></th>
+	    <th><select id="bs9_typesel" class="select"><option value="0">MJ</option><option value="1">H264</option></select></th></tr>
+	    <tr id="bs_mul9_name" class="bsmul"><th id="bs9_name" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs9_nameput" class="select"/></th></tr>
+	    <tr id="bs_mul9_host" class="bsmul"><th id="bs9_host" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs9_hostput" class="select" maxlength="60"/></th></tr>
+	    <tr id="bs_mul9_port" class="bsmul"><th id="bs9_port" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs9_portput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul9_Mport" class="bsmul"><th id="bs9_Mport" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs9_Mportput" class="select" maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th></tr>
+	    <tr id="bs_mul9_user" class="bsmul"><th id="bs9_user" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs9_userput" class="select"/></th></tr>
+	    <tr id="bs_mul9_pwd" class="bsmul"><th id="bs9_pwd" style="text-align:right;padding-right:10px;"></th>
+	    <th><input id="bs9_pwdput" class="select" maxlength="12" type="password"/></th></tr>
+	    <tr id="bs_mul9_but" class="bsmul"><th></th>
+	    <th><button id="bs9_addput"></button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="bs9_delput"></button></th></tr>
+	    <tr>
+        <th colspan="2">
+            <div id="bsmul_word" style="text-align:left;"></div>
+            <div id="bsmulDevNameTip" style="text-align:left;"></div>
+            <div id="bsmulUsrNameTip" style="text-align:left;"></div>
+            <div id="bsmulPwdTip" style="text-align:left;"></div>
+        </tr>
+	    </table>
+	</div>
+</fieldset>  

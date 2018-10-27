@@ -1,0 +1,242 @@
+<!--<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="BsTimet"></div></strong></font></legend>  -->
+
+	<div class="config_cont_hauto">
+	<div id="DstPiTimer1" style="width:285px; height:0px; overflow:hidden;"></div>
+	<iframe id="iframe1" style="width:0px; height:0px; border:0px; overflow:hidden;"></iframe>
+
+	    <div class="login"></div>
+	    <div class="item" >
+	       <div class="item_R">
+               <input id="bstimeRf" type="button" class="logo_refresh" />
+               <input id="bsTSave" type="button" class="logo_save" />
+	       </div>
+	    </div>
+	    <div class="bssysdiv"></div>
+	    <table class="bssystab" id="bsTimeHidden">
+	        <tr>
+	            <th width="180" id="BsTimeZone" class="table_left_bgcolor"></th>
+	            <th><select class="select" id="bsTTimeZone"/></th>
+	        </tr>
+	    </table>
+	    <div style="height:10px; overflow:hidden; "></div>
+	    <table id="tblTimeServer" style="font-family:Arial"> 
+	        <tr>
+                <td>
+                    <a style="float:left;" id="bsTIsEnNTP"></a><input id="bsTistS" type="checkbox" style="float:left;"/>
+                </td>
+            </tr>
+	    </table>
+	    <table id="bsTNTPTable" class="bssystab" style="font-family:Arial"> 
+	      <tr>
+	        <th width="180" id="bsTNTPAddrS" class="table_left_bgcolor"></th>
+	        <th><select class="select" id="bsTNTPS1" >
+	            <option value="Auto">Auto</option>
+	        	<option value="time.nist.gov">time.nist.gov</option>
+	            <option value="time.kriss.re.kr">time.kriss.re.kr</option>
+	            <option value="time.windows.com">time.windows.com</option>
+	            <option value="time.nuri.net">time.nuri.net</option>
+	            <option value="...">...</option>
+	        </select></th>
+	      </tr>
+	      <tr name="bsTSDNpt">
+	        <th width="180" id="bsTInputNTP" class="table_left_bgcolor"></th>
+	        <th><input class="select" maxlength = "63" id="bsTNTPSE2" /></th>
+	      </tr>
+	    </table>
+	    <div style="height:10px; overflow:hidden; "></div>
+	    <table id="bsTSDT" class="bssystab1">
+	      <tr>
+	        <th width="180" id="bsTSysTime" class="table_left_bgcolor"></th>
+	        <th>
+	        	<div style="clear:left;float:left;">
+	                 <input id="bsTSTime" style="width:150px; text-align:center;height:20px;margin-top:3px;float:left;margin-left:15px" readonly="readonly" />
+	                 <div id="bsTSTimerObj" style="height:25px; float:left; margin-left:20px; overflow:hidden;" ></div>
+	                 <br />
+	                 <button  id="bstimeLoad" style="margin-left:15px;margin-top:10px;margin-bottom:5px;"></button>
+	            </div>
+	        </th>
+	      </tr>
+          </table>
+          <table class="bssystab1">
+	      <tr>
+	        <th width="180" id="bsTDateS" class="table_left_bgcolor"></th>
+	        <th><select class="select" id="bsT_DATEFORMAT">
+	            <option id="bsTYMD" value="0"></option>
+	            <option id="bsTDMY" value="1"></option>
+	            <option id="bsTMDY" value="2"></option>
+	        </select></th>
+	      </tr>
+	       <tr>
+	        <th width="180" id="bsTTimeS" class="table_left_bgcolor"></th>
+	        <th><select class="select"  id="bsT_TIMEFORMAT">
+	        	<option id="bsT12" value="0"></option>
+	            <option id="bsT24" value="1"></option>
+	        </select></th>
+	      </tr>
+	    </table>
+	    
+	    <div style="height:20px; overflow:hidden; "></div>
+	    
+	    <div class="bssystab" id = "bsTimeTDST">
+	        <div style="text-align:left;clear:left; float:left;" id="bsTIsEnUseDST"></div><input id="bsTUseDST" type="checkbox" style="float:left; margin-top:5px;"/>
+	    </div>
+	    <table id="bsTDST" class="bssystab">
+        
+        <tr>
+        <th width="180" id="TDSStartTime" class="table_left_bgcolor">
+        </th>
+        <th>
+        
+        <select id="TDSSMouth">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+        <option value="11"></option>
+        <option value="12"></option>
+        </select>
+        
+        <select id="TDSSWhichWeek">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        </select>
+        
+        
+        <select id="TDSSWeek">
+         <option value="7"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        </select>
+        <select id="TDSSHour">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+        <option value="11"></option>
+        <option value="12"></option>
+        <option value="13"></option>
+        <option value="14"></option>
+        <option value="15"></option>
+        <option value="16"></option>
+        <option value="17"></option>
+        <option value="18"></option>
+        <option value="19"></option>
+        <option value="20"></option>
+        <option value="21"></option>
+        <option value="22"></option>
+        <option value="23"></option>
+        
+        </select>
+        <span>
+        : 0 0
+        </span>
+        </th>
+        </tr>
+          <tr>
+        <th width="180" id="TDSEndTime" class="table_left_bgcolor"></th>
+        <th>
+         <select id="TDSEMouth">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+        <option value="11"></option>
+        <option value="12"></option>
+        </select>
+        
+        <select id="TDSEWhichWeek">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        </select>
+        
+        
+        <select id="TDSEWeek">
+         <option value="7"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        </select>
+        <select id="TDSEHour">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+        <option value="11"></option>
+        <option value="12"></option>
+        <option value="13"></option>
+        <option value="14"></option>
+        <option value="15"></option>
+        <option value="16"></option>
+        <option value="17"></option>
+        <option value="18"></option>
+        <option value="19"></option>
+        <option value="20"></option>
+        <option value="21"></option>
+        <option value="22"></option>
+        <option value="23"></option>
+        
+        </select>
+        <span>
+        : 0 0
+        </span>
+        </th>
+        </tr>
+	      <tr>
+	        <th width="180" id="bsTDaylight" class="table_left_bgcolor"></th>
+	        <th>
+	            <div style="margin-left:15px;">
+	                <select id="bsTDstFH" style="float:left;margin-top:5px;">
+	                    <option value="0">0</option>
+	                    <option value="30">30</option>
+	                    <option value="60">60</option>
+	                    <option value="90">90</option>
+	                    <option value="120">120</option>
+	                </select>
+	                <div id="bsTDstMinute" style="float:left;"></div>
+	            </div>
+	        </th>
+	      </tr>
+	    </table>
+	 
+	</div>
+<!--</fieldset>-->

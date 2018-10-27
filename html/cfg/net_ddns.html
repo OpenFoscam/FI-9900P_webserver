@@ -1,0 +1,79 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="NetDdnst"></div></strong></font></legend>  
+
+	<div class="config_content">
+	    <div class="login"></div>
+	    <div class="item" >
+
+	           <div class="item_R">
+                   <input id="netddnsRf" type="button" class="logo_refresh" />
+                   <input id="netDDnsSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div> 
+	   
+	  
+	    <div style="text-align:left;clear:left; float:left;font-family:Arial;" id="netDDnsIsEn"></div><input id="netUseDDns" type="checkbox" style="float:left; margin-top:8px;"/>   
+	    <br /> 
+        
+        <table id="netDDnsTable1" class="bssystab">
+        <div style="text-align:left;clear:left; float:left;font-family:Arial;" id="netDDnsFact">制造商的DDNS</div> 
+	    <br /> 
+	    </table>
+        <table id="netDDnsTable2" class="bssystab">
+        <tr>
+        <th width="180" class="table_left_bgcolor" id="netDDnsFact1">制造商的DDNS</th>
+        <th>
+            <input id="netDDns_FACTORYDDNS" readonly="readonly" disabled="disabled" class="select"/>
+            <input type="button" id="netDDnsrestore" style="margin-left:15px;" />
+        </th>
+        </tr>
+        </table>
+        <br /> 
+        <table  id="netDDnsTable3" class="bssystab">
+        <div style="text-align:left;clear:left; float:left;font-family:Arial;" id="netDDnsthird">第三方的DDNS</div> 
+	    <br /> 
+        </table>
+	     <table id="netDDnsTable" class="bssystab">
+	      <tr>
+	        <th width="180" id="netDDnsAdr" class="table_left_bgcolor"></th>
+	        <th><select id="netDDns_DDNSSERVER" class="select"><option value="0">无</option><option value="1" id="netDDnshsk"></option><option value="2">3322</option><option value="3">no-ip</option><option value="4">DynDns</option><option value="5" id="netDDNSFoscam">myfoscam.org</option></select></th>
+	      </tr>
+	   	  <tr id="netddnstr0">
+	        <th width="180" id="netDomains" class="table_left_bgcolor"></th>
+	        <th><input  id="netDDns_HOSTNAME" class="select" maxlength="128" onkeyup="rpPos(this,/[\&\=]/g,'')" onbeforepaste="isPwd(clipboardData.getData('text'));clipboardData.setData('text',clipboardData.getData('text').replace(/[\&\=]/g,''))"/></th>
+	      </tr>
+	      <tr id="netddnstr1">
+	        <th width="180" id="netDDnsUsrN" class="table_left_bgcolor"></th>
+	        <th>
+            <input id="netDDns_USER" maxlength="20" class="select"/>
+            <div id="netDDns_USER_Tip" style="float:left;"></div>
+            </th>
+	      </tr>
+	      <tr id="netddnstr2">
+	        <th width="180" id="netDDnsPWD" class="table_left_bgcolor"></th>
+	        <th>
+            <input id="netDDns_PASSWORD" class="select"  type="password" maxlength="12"/>
+            <div id="netDDns_PASSWORD_Tip" style="float:left;"></div>
+            </th>
+	      </tr>
+	      <tr id="getDDNStr" style="display:none;">
+	        <th width="180" id="netDDNSTitle" class="table_left_bgcolor"></th>
+	        <th style="padding-left: 10px;">
+	        	<div id="getDDNSTips" style="text-align: left;text-indent: 0;"></div>
+	        	<button id="getDDNSButton"></button>
+	        </th>
+	      </tr>
+	    </table>
+	    <div id="ddnsPages" style="display:none;position: absolute;top:100px;width:715px;
+	    height: 440px;">
+	    	<iframe src="" name="iframeA" id="cloundContent" frameborder="no" style="width:715px;height:440px;border: 0px solid transparent;display:none;"></iframe>
+		</div>
+		<input type="text" id="MacAddress" style="display:none;">
+		<input type="text" id="productName" style="display:none;">
+		<input type="text" id="devName" style="display:none;">
+		<input type="text" id="appVersion" style="display:none;">
+		<input type="text" id="sysVersion" style="display:none;">
+		<input type="text" id="uid" style="display:none;">
+	</div>
+</fieldset>

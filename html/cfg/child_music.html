@@ -1,0 +1,103 @@
+﻿<fieldset>
+    <legend><font size="5px" color="#4793e7"><strong><div id="tit_child_music"></div></strong></font></legend>
+    <div class="config_content" style="overflow:scroll;overflow-x:hidden;height:460px;width:747px;">
+        <div class="login"></div>
+        <div class="item">
+            <div class="item_R">
+                <input id="childmusicRf" type="button" class="logo_refresh" />
+                <input id="childmusicSave" type="button" class="logo_save" style="display: none;" />
+            </div>
+        </div>
+        <div class="bssysdiv"></div>
+        
+        <table id="tab_music_path" class="bssystab" style="display: none;">
+            <tr>
+                <th width="150" id="th_music_path" class="table_left_bgcolor"></th>
+                <th>
+                    <select id="sel_music_path" style="margin-left:50px;width:200px" class="select">
+                        <option id="opt_music_flash" value="0">Flash</option>
+                        <option id="opt_music_sd" value="1">SD</option>
+                    </select>
+                </th>
+            </tr>
+        </table>
+
+        <table class="bssystab">
+            <tr>
+                <th width="150" id="th_music_list" class="table_left_bgcolor"></th>
+                <th>
+                    <div id="div_music_list_name" style="float:left;">
+                        <select id="sel_music_list_name" style="margin-left: 50px; width: 200px" class="select"></select>
+                        <button id="btn_music_addN" style="margin-left: 50px"></button>
+                        <button id="btn_music_subN" style="margin-left: 20px"></button>
+                    </div>
+                    <div id="div_music_list_add" style="display: none; float:left;">
+                        <input id="iput_music_list_name" style="margin-left: 50px; width: 200px;" class="select" maxlength="31"/>
+                        <button id="btn_music_list_OK" style="margin-left: 50px"></button>
+                        <button id="btn_music_list_CAN" class="rtstyle3" style="margin-left: 20px"></button>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <div id="divMusicMaxTips" style="text-align:left;"></div>
+        <fieldset style=" height: 350px; width: 250px; float: left; border-color: #70c8e6;">
+            <legend id="leg_child_music"></legend>
+            <div style="overflow:auto; height:320px; width:250px;">
+            <table id="tab_child_music" width="230px" style="border-collapse: collapse; text-align: center;line-height: 18px;">
+                <tr>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                </tr>
+            </table>
+            <div id="child_music_header" style="text-align:center;">
+                <div style="display:inline-block; margin-right:4px;"></div>
+                <div style="display:inline-block; "></div>
+            </div>
+			</div>
+        </fieldset>
+        <div style="width: 150px; float: left; margin-top: 120px;">
+            <button id="btn_music_add_list" style="width: 140px;"></button>
+            <br />
+            <button id="btn_music_del_list" class="rtstyle3" style="width: 140px; margin-top: 10px;"></button>
+            <br />
+            <button id="btn_music_move_up" class="rtstyle3" style="width: 140px; margin-top: 10px;"></button>
+            <br />
+            <button id="btn_music_move_down" class="rtstyle3" style="width: 140px; margin-top: 10px;"></button>
+            <br />
+        </div>
+        <fieldset style="height: 350px; width: 250px; float: left; border-color: #70c8e6;">
+            <legend id="leg_child_music_list"></legend>
+            <div style="overflow: auto; width:250px; height:320px; ">
+                <table id="tab_child_music_list" width="230px" style="border-collapse: collapse; text-align: center; ">
+                    <tr>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                    </tr>
+                </table>
+                <div id="musicListHead" style="text-align:center;">
+                    <div style="display:inline-block; margin-right:4px;"></div>
+                    <div style="display:inline-block; "></div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</fieldset>

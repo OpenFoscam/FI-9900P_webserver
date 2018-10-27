@@ -1,0 +1,48 @@
+﻿<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="RcLocalAlarmLeg"></div></strong></font></legend>
+	<div class="config_content">
+	    <div class="login"></div>
+	    <div class="item" >
+	           <div class="item_R">
+                   <input id="rclocalalarmRf" type="button" class="logo_refresh" />
+                   <input id="rcLocalAlarmSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div>
+        <!-- 是否开启PC声音报警 -->
+        <!--<table class="bssystab" style="font-family:Arial;">
+            <tr>
+	            <th width="250" id="rcSoundAlarmAsPC" class="table_left_bgcolor"></th>
+	            <th>
+	                <select id="rcSoundAlarmAsPCList" class="select">
+	                    <option id="AvALCNoTS" value="0"></option>
+                        <option id="AvALCIsTS" value="1"></option>
+	                </select>
+	            </th>
+	        </tr>
+        </table>-->
+	    <div id="rcLocalAlarmCon">
+	        <div style="text-align:left;clear:left; float:left; font-family:Arial;" id="rcLocalAListEnb" class="sushfdivw"></div><input id="rcLocalAListCheck" type="checkbox" style="float:left; margin-top:8px;"/>
+	        <br />
+	        <table id="RcLocalAmTabel" class="bssystab" style="font-family:Arial;">
+                <!-- 本地报警录像时长 -->
+	            <tr>
+	                <th width="250" id="rcLocalAlarmTimeT" class="table_left_bgcolor"></th>
+	                <th>
+	                    <select id="rcLocalAlarmTimeList" class="select">
+	                        <option value="10">10s</option>
+	                        <option value="20">20s</option>
+	                        <option value="30">30s</option>
+	                        <option value="40">40s</option>
+	                        <option value="50">50s</option>
+	                        <option value="60">60s</option>
+	                    </select>
+	                </th>
+	            </tr>
+	        </table>
+	    </div>
+	    <br />
+	    <div id="rcLocalAlarmTips" style="display:none;"></div>
+	    <div id="rcLocalAlarmResult"></div>
+	</div>
+</fieldset>

@@ -1,0 +1,38 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="NetP2PTitle"></div></strong></font></legend>  
+	<div class="config_content">
+	    <div class="login"></div>
+	    <div class="item" >
+	       
+	           <div class="item_R">
+	               <input id="netp2pRf" type="button" class="logo_refresh" />
+                   <input id="netp2pSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div>
+	    
+	    
+	      <table id="netp2ptab" class="bssystab">
+	    <tr>
+	        <th width="180" id="NetUID" class="table_left_bgcolor"></th>
+	        <th><input class="select" style="float:left;margin-left:15px;" id="theNetUID" readonly="readonly"/></tr>
+	    </tr>
+
+	    </table>
+	    
+	    <table class="bssystab">
+	        <div style="text-align:left;clear:left; float:left; " id="divSysipP2P"></div>
+	        <input id="chkEnableP2PPort" type="checkbox" style="float:left; margin-top:5px;"/>
+	    </table>
+	    <table id="tbP2P" class="bssystab">
+	        <tr>
+	            <th width="180" id="thP2PPort" class="table_left_bgcolor"></th>
+	            <th>
+	                <input class="select" maxlength="5" id="txtP2PPort" onKeyUp="rpPos(this,/[^\d]/g,'');if(value*1>65533)value=65533;if((value*1==10000)||(value*1==10001)||(value*1==50021))value=6001" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>
+	            </th>
+	        </tr>
+	    </table>
+	    
+	    <div id="netp2pResult"></div>
+    </div>
+</fieldset> 

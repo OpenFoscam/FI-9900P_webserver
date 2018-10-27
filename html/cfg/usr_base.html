@@ -1,0 +1,106 @@
+<fieldset>  
+	<legend><font size="5px" color="#4793e7"><strong><div id="UsrBaset"></div></strong></font></legend>  
+	<div style="width:750px;height:380px;text-align:center; line-height:30px;font-size:13px;color:#000000;vertical-align:center;font-family:Arial;">
+	    <div class="login"></div>
+	    <div class="item" >
+	           <div class="item_R">
+                   <input id="usrbaseRf" type="button" class="logo_refresh" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div>
+	   <table id="usrBsTable" width="380px" style="border-collapse:collapse; clear:left; float:left; font-family:Arial;" border="1" bordercolor="#70c8e6">
+	      <tr>
+	        <td id="usrnom" width="50"></td>
+	        <td id="usrusr" width="125"></td>
+	        <td id="usrright" width="125"></td>
+	      </tr>
+	    </table>
+	    <table id="usrBsUTable" width="350px" style="border-collapse:collapse;font-size:12px;;float:left; margin-left:5px;text-align:left; font-family:Arial;" border="0" bordercolor="#70c8e6">
+	      
+	      <tr>
+	        <td width="140" id="usrBsUseName" style="text-align:right"></td>
+	        <td><input id="usrBsName"  maxlength="20" style="width:150px;margin-left:20px;"/></td>
+	      </tr>
+	      <tr name="usrBsDP1" style="display:none;">
+	        <td id="usrBsPassword" style="text-align:right"></td>
+	        <td><input id="usrBsOldPwd" onkeyup="if(event.keyCode != 9){chkpwd(this,chkResultadd);}" type="password"  maxlength="12" style="width:150px;margin-left:20px;"/></td>
+	      </tr>
+	      <tr name="usrBsDP5" style="display:none;">
+	        <td width="140" id="usrBsNewUsernameT" style="text-align:right;"></td>
+	        <td><input id="usrBsNewUsernameP"   maxlength="20" style="width:150px;margin-left:20px;"/></td>
+	      </tr>
+	      <tr name="usrBsDP2" style="display:none;">
+	        <td id="usrBsNPassword" style="text-align:right"></td>
+	        <td><input id="usrBsNewPwd"  onkeyup="if(event.keyCode != 9){chkpwd(this,chkResult);}" type="password" maxlength="12" style="width:150px;margin-left:20px;"/></td>
+	      </tr>
+         <tr id="chkResultTR" style="display:none;">
+            <td id="chkResultTD" style="text-align:right" style="width:150px;margin-left:20px;"></td>
+            <!--<td id="chkResulttd2"style="width:150px;margin-left:20px;background:url(../images/pwd_no.gif);background-repeat:no-repeat;background-position-x:20px;background-position-y:20px;">-->
+            <td id="chkResult2">
+                <div  id ="chkResult" style="width:150px;margin-left:20px;background:url(../images/pwd_no.gif)no-repeat center; height: 15px; line-height: 15px; "></div>
+                <!--<img src="images/pwd_no.gif"  id ="chkResult"/>-->
+            </td>
+                          
+         </tr>
+         <tr id="chkResultaddTR" style="display:none;">
+            <td id="chkResultaddTD" style="text-align:right" style="width:150px;margin-left:20px;"></td>
+            <!--<td id="chkResultadd" style="width:150px;margin-left:20px;background:url(../images/pwd_no.gif);background-repeat:no-repeat;background-position-x:20px;background-position-y:20px;"></td>-->
+            <td>
+            <div  id ="chkResultadd" style="width:150px;margin-left:20px;background:url(../images/pwd_no.gif)no-repeat center; height: 15px; line-height: 15px; "></div>
+            </td>    
+         </tr>
+         
+	      <tr name="usrBsDP2AG" style="display:none;">
+	        <td id="usrBsNPasswordAG" style="text-align:right"></td>
+	        <td><input id="usrBsNewPwdAG" type="password" maxlength="12" style="width:150px;margin-left:20px;"/></td>
+         </tr>
+	      <tr>
+	        <td id="UsrBaseRight" style="text-align:right"></td>
+	        <td><select id="usrBsRight" style="width:157px;margin-left:20px;">
+	        	<option id="usrBsRight0" value="0"></option>
+	            <option id="usrBsRight1" value="1"></option>
+	            <option id="usrBsRight2" value="2"></option>
+	        </select></td>
+	      </tr>
+	      
+	      <tr>
+	        <td></td>
+	        <td>
+	          <div id="usrBase_fushibaoPlus" style="display:none; text-align:left;"><input type="checkbox" name="usrRadPwdOrUsrname" value="username" id="usrRadUsrname" /><a id="usrBsModifyUsername"></a></div>
+	          <div style="text-align:left;"><input type="checkbox" name="usrRadPwdOrUsrname" value="pwd" id="usrRadPwd" /><a id="usrBsModifyPwd"></a></div>
+	        </td>
+	      </tr>
+	      <tr name="usrBsDP3" style="display:none;">
+	      	 <td></td>
+	      	 <td>
+	         	<div style="width:100px;margin-left:20px;margin-top:20px;">
+	         	    <div style="clear:left; float:left;">
+	         	        <button style="width:70px;" id="usrBsAdd"></button>
+	         	    </div>
+	            </div>
+	        </td>
+	      </tr>
+	      <tr name="usrBsDP4">
+	      	<td></td>
+	      	<td>
+	         	<div style="width:100px; margin-left:20px;margin-top:20px;">
+	        		<div style="clear:left; float:left;">
+	        		    <button id="usrBsXg" style="display:none"></button>
+	        		</div>
+	        		<div style="clear:left; float:left;">
+	        		    <button style="width:80px;display:none" id="usrBsDel"></button>
+	        		</div>
+	            </div>
+	            <div id="userModiResult"></div>
+	        </td>
+	      </tr>
+          <tr>
+            <td colspan="2" style="padding-left:40px;">
+            </td>
+          </tr>
+	    </table>
+
+	</div>
+	<div id="bsBaseUsrNameTip" style ="font-size:13px;width:750px;text-align:left;clear:both;"></div>
+    <div id="bsBasePwdTip" style ="font-size:13px;width:750px;text-align:left;clear:both;"></div>      
+</fieldset>

@@ -1,0 +1,100 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="BsEmailSet"></div></strong></font></legend>  
+	<div class="config_content" style="overflow:scroll;overflow-x:hidden;height:460px;width:730px;">
+	    <div class="login"></div>
+	    <div class="item" >
+
+	           <div class="item_R">
+                   <input id="bsemailRf" type="button" class="logo_refresh" />
+                   <input id="bsElSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div>
+	   
+	   <table class="bssystab">
+	    <div style="text-align:left;clear:left; float:left; " id="bsElIsEnUse"></div><input id="bsElUse" type="checkbox" style="float:left; margin-top:8px;"/>
+	    <br />
+	    
+	    </table>
+	    <div id="bsElTable1">
+	    <table class="bssystab" id="bsElTable" style="font-family:Arial">
+	      <tr>
+	        <th width="200" id="bsElSMTPAd"  class="table_left_bgcolor"></th>
+	        <th><input class="select" id="bsEl_SERVER" maxlength="60" value ="" />
+            <br />
+                <div id="bsSMTPEXAMPLE_tip" style =" text-align : left;"></div>
+	            <div id="bsSMTPNAME_Tip" style =" text-align : left;"></div>
+	        </th>
+	      </tr>
+	      <tr>
+	        <th id="bsElSMTPPort" class="table_left_bgcolor"></th>
+	        <th><input class="select" maxlength="5" id="bsEl_PORT" /></th>
+	      </tr>
+	       <tr>
+	        <th id="bsEprot" class="table_left_bgcolor"></th>
+	        <th><select class="select" id="bsEl_TLS">
+	        	<option id="BsEmailNon" value="0"></option>
+	            <option value="1">TLS</option>
+	            <option value="2">STARTTLS</option>
+	            </select><br/>
+	            <div id="bsElword" style ="text-align: left;" ></div></th>
+	      </tr>
+	      <tr>
+	        <th id="bsElIsEnLogVer" class="table_left_bgcolor"></th>
+	        <th><select class="select" id="bsEl_ISNEEDAUTH">
+	        	<option id="BsEmailIs" value="1"></option>
+	            <option id="BsEmailNo" value="0"></option>
+	        </select></th>
+	      </tr>
+	      <tr>
+	        <th id="bsElSMTPUsrName" class="table_left_bgcolor"></th>
+	        <th>
+                <input class="select" id="bsEl_USER"  type="text"  maxlength="63"/>
+                <br />
+                <div id="bsSMTP_username" style ="text-align:left;"></div>
+                <div id="bsEmailUsrnameTip" style ="text-align:left;"></div>
+            </th>
+	      </tr>
+	      <tr>
+	        <th id="bsElSMTPPassword" class="table_left_bgcolor"></th>
+	        <th>
+	            <input class="select" id="bsEl_PASSWORD" type="password" style="float:left;margin-left:15px;"  maxlength="16"/>
+                <br />
+                <div id="bsEmailPwdTip" style="text-align:left;"></div>
+	        </th>
+	      </tr>
+	      <tr>
+	        <th id="bsElSender" class="table_left_bgcolor"></th>
+	        <th>
+                <input class="select" id="bsEl_SENDER" type="text" style="float:left;margin-left:15px;" maxlength="63"/>
+                <button style="margin-left:5px;margin-top:3px;text-align:center;float:left;" id="bsElTest"></button>
+	            <div id="baemailword" style="float:left; font-size:12px; color:red; display:none;"></div>
+	            <br />
+	            <input class="select" style="float:left;margin-left:15px;width:470px;" id="bsetestsult" readonly="readonly" disabled="disabled" />
+            </th>
+	      </tr>
+	      <tr>
+	        <th id="bsElReciever1" class="table_left_bgcolor"></th>
+	        <th>
+                <input class="select" id="bsEl_RECIEVER1" type="text" maxlength="63"/>
+                <br />
+                <div id="bsSMTP_Receiver" style ="text-align :left"></div>
+                <div id="bsEmailReceiverTip" style ="text-align :left"></div>
+            </th>
+	      </tr>
+	      <tr>
+	        <th id="bsElReciever2" class="table_left_bgcolor"></th>
+	        <th><input class="select" id="bsEl_RECIEVER2" type="text" maxlength="63"/></th>
+	      </tr>
+	      <tr>
+	        <th id="bsElReciever3" class="table_left_bgcolor"></th>
+	        <th><input class="select" id="bsEl_RECIEVER3" type="text" maxlength="63"/></th>
+	      </tr>
+	      <tr>
+	        <th id="bsElReciever4" class="table_left_bgcolor"></th>
+	        <th><input class="select" id="bsEl_RECIEVER4" type="text" maxlength="63"/></th>
+	      </tr>
+	    </table>
+	    </div>
+	</div>
+</fieldset>

@@ -1,0 +1,57 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="PathFTPt"></div></strong></font></legend>  
+	<div class="config_content">
+	    <div class="login"></div>
+	    <div class="item" >
+
+	           <div class="item_R">
+                   <input id="pathftpRf" type="button" class="logo_refresh" />
+                   <input id="phFtpSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div> 
+	    <table class="bssystab">
+	      <tr>
+	        <th width="180" id="phFtpAddr" class="table_left_bgcolor"></th>
+	        <th>
+                <input id="phFtp_FTPADDR" maxlength = "127" class="select"/>
+                <br />
+                <div id="pathftpword" style="text-align:left;clear:left; float:left;"></div>
+                <br />
+                <div id="pathFtpAddrTip" style="text-align:left;"></div>
+            </th>
+	      </tr>
+	      <tr>
+	      <th id="phFtpPORT" class="table_left_bgcolor"></th>
+	      <th><input id="phFtp_FTPPORT" class="select"  maxlength="5" onkeyup="rpPos(this,/[^0-9]/g,'');" onbeforepaste="isPwd(clipboardData.getData('text'));clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/></th>
+	      </tr>
+	      <tr>
+	      <th id="phFtpzb" class="table_left_bgcolor"></th>
+	      <th><select id="phFtp_MODE" class="select"><option value="0"></option><option value="1"></option></select></th>
+	      </tr>
+	      <tr>
+	        <th id="phFtpUsrName" class="table_left_bgcolor"></th>
+	        <th>
+                <input id="phFtp_USERNAME" maxlength="63" class="select"/>
+                <br />
+                <div id="pathFtpUsrnameTip" style="text-align:left;"></div>
+            </th>
+	      </tr>
+	      <tr>
+	        <th id="phFtpPWD" class="table_left_bgcolor"></th>
+	        <th>
+                <input id="phFtp_PASSWORD" class="select" maxlength="63" type="password"/>
+                <br />
+                <div id="pathFtpPwdTip" style="text-align:left;"></div>
+            </th>
+	      </tr>
+	      <tr>
+	      <th align="center"><button id="phFtpTest" style="text-indent:0px;width:58px;"></button></th>
+	      <th>
+	        <input id="phFtpsult" readonly="readonly" class="select" style="float:left;margin-left:15px;" disabled="disabled"/>
+	        <div id="pathftpword1" style="float:left; font-size:12px; color:red; display:none;"></div></th>
+	      </tr>
+	    </table>
+	     
+	</div>
+</fieldset> 

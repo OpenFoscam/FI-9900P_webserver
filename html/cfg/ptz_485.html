@@ -1,0 +1,72 @@
+﻿<fieldset>  
+	<legend><font size="5px" color="#4793e7"><strong><div id="PTZ485">RS485</div></strong></font></legend>  
+	<div class="config_content">
+	    <div class="login"></div>
+	    <div class="item" >
+	       <div class="item_R">
+               <input id="ptz485Rf" type="button" class="logo_refresh" />
+               <input id="ptz485Save" type="button" class="logo_save" />
+	       </div>
+	    </div>
+	    <table class="bssystab">
+	        <tr>
+	            <td class="table_left_bgcolor" id="pT485Protocol"></td>
+	            <td>
+	                <select id="p485Protocol" class="select">
+	                    <option value="0">PELCO-D</option>
+	                    <option value="1">PELCO-P</option>
+	                </select>
+	            </td>
+	        </tr>
+	        <tr>
+	            <td width="180" class="table_left_bgcolor" id="pT485Addr"></td>
+	            <td>
+	                <input id="p485Addr" class="select" maxlength="3" onKeyUp="rpPos(this,/[^1-9]/g,'');if(value*1>255)value=255;" />
+	            </td>
+	        </tr>
+	        <tr>
+	            <td class="table_left_bgcolor" id="tT485Baud"></td>
+	            <td>
+	                <select id="p485Baud" class="select">
+	                    <option value="1200">1200</option>
+                        <option value="2400">2400</option>
+                        <option value="4800">4800</option>
+                        <option value="9600">9600</option>
+                        <option value="19200">19200</option>
+                        <option value="38400">38400</option>
+                        <option value="57600">57600</option>
+	                </select>
+	            </td>
+	        </tr>
+	        <tr>
+	            <td class="table_left_bgcolor" id="pT485DataBit"></td>
+	            <td>
+	                <select id="p485DataBit" class="select">
+	                    <option value="7">7</option>
+                        <option value="8">8</option>
+	                </select>
+	            </td>
+	        </tr>
+	        <tr>
+	            <td class="table_left_bgcolor" id="pT485StopBit"></td>
+	            <td>
+	                <select id="p485StopBit" class="select">
+	                    <option value="1">1</option>
+                        <option value="2">2</option>
+	                </select>
+	            </td>
+	        </tr>
+	        <tr>
+	            <td class="table_left_bgcolor" id="pT485Check"></td>
+	            <td>
+	                <select id="p485Check" class="select">
+	                    <option id="p485OptNo" value="0"></option>
+                        <option id="p485OptOdd" value="1"></option>
+                        <option id="p485OptEven" value="2"></option>
+	                </select>
+	            </td>
+	        </tr>
+	    </table>
+	    <div id="ptz485Result"></div>
+    </div>
+</fieldset> 

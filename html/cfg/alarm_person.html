@@ -1,0 +1,162 @@
+<fieldset style="clear:both">
+	<legend><font size=5px color="#4793e7"><strong><div id="AlarmT_Man"></div></strong></font></legend> 
+
+	<div class="config_content" style="overflow:scroll;overflow-x:hidden;height:460px;width:800px;">
+	    <div class="login"></div>
+	    <div class="item_S" >
+
+	           <div class="item_R">
+                   <input id="alarmpersonRf" type="button" class="logo_refresh" />
+                   <input id="AlarmpersonSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv_S"></div>
+	    <div id="amtable">
+	    <div style="text-align:left;clear:left; float:left;" id="AlarmIsEb_Man"></div>
+	    <input id="AmIsEnable_Man" type="checkbox" style="float:left; margin-top:8px;"/>
+	    <div id="setDiv" style="float: left;margin-left: 100px;width: 300px;">
+	    	<select id="Set" class="select" style="margin-top: 5px;margin-left:0;">
+		    	<option id="defaultSet"  value="0"></option>
+		    	<option id="advancedSet" value="1"></option>
+		    </select>
+	    </div>
+	    </div>
+        <br/>
+        
+        <div style="" id="setArea">
+        	<table class="table-wg">
+        		<tbody>
+        			<tr>
+        				<td width="200px" id="sensitivity"></td>
+        				<td >
+        					<div id="sensitivity" class="lf2">
+                            	
+	                            <div id="strip_div" class="lf4">
+	                            	<div id="strip_left" class="lf5" style="width:0"></div>
+	                            </div>
+	                            <div id="slider" class="lf6"></div>
+        						
+        					</div>
+        					<span id="sensitivity_value"></span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<td colspan="2" id="sensitivityNotes"></td>
+        			</tr>
+					
+					<tr>
+						<td id="cameraAngle"></td>
+						<td>
+							<input type="radio" name="Tilt" id="tilt" value="0"><span id="Incline"></span>
+							<input type="radio" name="Level" id="level" value="1"><span id="Horizontal"></span>
+						</td>
+					</tr>
+        		</tbody>
+        	</table>
+        </div>
+        <div id="flowCountHuman" style="text-align:left;">
+        	<table class="table-wg ">
+        		<tbody>
+					<tr>
+						<td width="150px" id="boundingBoxSwitch"></td>
+						<td width="150px">
+							<div style="text-align: left;padding:0 5px" id="switch_boundingBox"  state="">
+								<img id="switchBackground" src="../images/u78.png" alt="" style="cursor: pointer;" >
+								<img id="switchSign" src="../images/u75.png" alt="" style="cursor: pointer;margin-left: -25px;">
+							</div>
+						</td>
+					</tr>
+	        		<tr>
+						<td width="150px" id="peopleCount"></td>
+						<td width="150px">
+							<div style="text-align: left;padding:0 5px" id="switch_flow" toggle="">
+								<img id="switchColor" src="../images/u78.png" alt="" style="cursor: pointer;" >
+								<img id="personCountToggle" src="../images/u75.png" alt="" style="cursor: pointer;margin-left: -25px;">
+							</div>
+						</td>
+					</tr>
+					<tr id="flow_man">
+						<td width="150px" id="peopleCountAllDay"></td>
+						<td width="150px"><span id="manFlow">0</span><span id="clear"></span></td>
+					</tr>	
+        		</tbody>
+        	</table>
+        </div>
+	        <table id="AlmTabel_Man" class="bssystab" style="width:729px;">
+	            <tr>
+	                <th width="180" id="AmTrger_Man">报警触发间隔</th>
+	                <th>
+                        <select id="Amtrigger_Man" class="select" readonly="">
+	        	            <option value="5">5s</option>
+	                        <option value="6">6s</option>
+	                        <option value="7">7s</option>
+	                        <option value="8">8s</option>
+	                        <option value="9">9s</option>
+	                        <option value="10">10s</option>
+	                    </select>
+                    </th>
+	            </tr>
+	            <tr>
+	                <th rowspan="6" width="180" id="AmTactics_Action"></th>
+	            </tr>
+	            <tr>
+	            	<th>
+	            		<div id="humanAlarmRing" style="float:left;"></div>
+                        <input id="AmLink_Man1" type="checkbox" style="float:left; margin-top:6px;" />
+                        
+                        <div style="float:left; margin-left:100px; " id="AlarmPCSound_Huamn"></div>
+                        <input type="checkbox" id="PCAlarmSwitch" style="float:left;margin-top:6px;" />
+	            	</th>
+	            </tr>
+	            <tr>
+	                <th id="AmSedEmail_Man" style="border-top:1px solid #70c8e6;"><input id="AmLink_Man2" type="checkbox" /></th>
+	            </tr>
+	            <tr id="captImgTr">
+	                <th>
+                        <div id="AmCaptImg_Man" style="float:left"></div>
+                        <input id="AmLink_Man3" type="checkbox" style="float:left; margin-top:6px;" />
+	                    <div style="float:left;margin-left:100px;margin-right:10px;" id="AmCapttime_Man"></div>
+                        <select style="float:left;margin-top:2px;" id="AmCTime_Man">
+                            <option value="1">1s</option>
+                            <option value="2">2s</option>
+                            <option value="3">3s</option>
+                            <option value="4">4s</option>
+                            <option value="5">5s</option>
+                        </select>
+	                    <br />
+                        <div id="divAlarmSnapTips_Man" style="text-align:left"></div>
+	                </th>
+	            </tr>
+	            <tr id = "AmRecordTR">
+	                <th>
+	                    <div id="AmRecord_Man" style="float:left"></div><input id="AmLink_Man4" type="checkbox" style="float:left; margin-top:6px;" />
+                        <br />
+                        <div id="divAlarmRecordTips_Man" style="text-align:left;"></div>
+	                </th>
+	            </tr>
+                <tr id="AmToPhoneTR">
+                    <th>
+                        <div style="float:left" id="AmToPhone_Man"></div><input id="AmLink_Man8" type="checkbox" style="float:left; margin-top:6px;" />
+                    </th>
+                </tr>
+	            
+	        </table>
+	        
+	    
+	    <div id="AmDiv_Man">
+	    <div style="width:19px; height:18px;overflow:hidden;float:left;margin:6px 10px 0px 300px; background:url(../../images/time.gif); display:inline;"></div><div style="height:40px; float:left;overflow:hidden; " id="AmVCBitmap_Man"></div>
+	    <div style="height:240px; width:100%;font-family:Arial;">
+	    	<div id="AmXq_Man" style="float:left;clear:left; width:57px; height:200px;"></div>
+	        <div style="float:left; background:url(../../images/cb3.gif) repeat">
+	        	<div id="AmHead_Man" style="height:23px;+height:25px;"></div>
+	            <div id="am_DivBox_Man"></div>
+	        </div>
+	    </div>
+	    </div>
+        <!-- <div id="rcTempTips" style="float:left;display:none;"></div>
+        <div id="rcTempTips_F" style="float:left;display:none;"></div>
+        <div id="rcTempTips_H" style="float:left;display:none;"></div> -->
+        </br>
+       <div id="rcAlarmNotice_Man" style="float:left;font-family:Arial;"></div>
+	</div>
+</fieldset>  

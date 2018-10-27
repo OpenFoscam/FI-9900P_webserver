@@ -1,0 +1,207 @@
+﻿<div id="motionTitle" style="font-family:arial;float:left;margin-left:300px; ">
+    <button id="AmMoSX" style="display:none;font-family:arial;"></button>
+    <button id="btnDelMotionRect" style="display:none; margin-left:30px;font-family:arial;"></button>
+</div>
+<div id="AmMoSXOut" style="display:none; margin-left: 30px; font-family: arial;">
+	<div style="float:left; margin-left:20px;margin-top: 5px;font-family:arial;font-size: 14px;" id="Am_OutMove"></div>
+	<input id="AmOutMove" type="checkbox" style="float:left;margin-top: 7px;"/>
+</div>
+<div id="AmAlarmImg" style="float:left; margin-top:5px; padding-left: 15px; display:none; ">
+    <div style="float:left;width:129px;height:16px;background:url(../images/alarm_1.png);"></div>
+</div>
+<fieldset style="clear:both">  
+	<legend><font size=5px color="#4793e7"><strong><div id="AlarmT"></div></strong></font></legend> 
+
+	<div class="config_content" style="overflow:scroll;overflow-x:hidden;height:460px;width:800px;">
+	    <div class="login"></div>
+	    <div class="item_S" >
+
+	           <div class="item_R">
+                   <input id="alarmRf" type="button" class="logo_refresh" />
+                   <input id="AlarmSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv_S"></div>
+	    <div id="amtable">
+	    <div style="text-align:left;clear:left; float:left;" id="AlarmIsEb"></div><input id="AmIsEnable" type="checkbox" style="float:left; margin-top:8px;"/>
+	    </div>
+        <br />
+	        <table id="AlmTabel" class="bssystab" style="width:729px;">
+	            <tr id="AmMotion" style="display:none;">
+	                <th width="180" id="AmMotionAlarm"></th>
+                    <th width="180" id="PirMotionAlarm" style="display:none;"></th>
+	                <th>
+                        <select id="AmMotionS" class="select">
+	                        <option id="AmMotionTrue" value="1"></option>
+	                        <option id="AmMotionFalse" value="0"></option>
+	                    </select>
+                    </th>
+	            </tr>
+	            <tr id="AmHuman" style="display:none;">
+	                <th width="180" id="AmHumanAlarm"></th>
+	                <th>
+                        <select id="AmHumanS" class="select">
+	                        <option id="AmHumanTrue" value="1"></option>
+	                        <option id="AmHumanFalse" value="0"></option>
+	                    </select>
+                    </th>
+	            </tr>
+	            <tr id="Amsen" style="display:none;">
+	                <th width="180" id="AmSensitivity"></th>
+	                <th>
+                        <select id="AmSensit" class="select">
+	                        <option id="AmLowestSensit" value="4"></option>
+	                        <option id="AmLowerSensit" value="3"></option>
+	                        <option id="AmLowSensit" value="0"></option>
+	                        <option id="AmMidSensit" value="1"></option>
+	                        <option id="AmHighSensit" value="2"></option>
+	                    </select>
+                    </th>
+	            </tr>
+	            <tr id="AmEleLevel" style="display:none;">
+	                <th id="AmEleLevelT"></th>
+	                <th>
+	                    <select id="AmEleLevelS" class="select">
+	                        <option id="AmEleLowLevel" value="0"></option>
+	                        <option id="AmEleHighLevel" value="1"></option>
+	                    </select>
+	                </th>
+	            </tr>
+                <tr id="AmTemperature1" style="display:none;">
+	                <th id="AmTemperatureT" style="width:210px;"></th>
+	                <th>
+	                    <input id="AmTemperatureLow" style="width:60px;float:left; margin-left:15px" class="select"/>
+	                    <div style="float:left;">~</div>
+	                    <input id="AmTemperatureTop"  style="width:60px;float:left; margin-left:5px"  class="select"/>
+	                    <select id="AmTemperature_sel_DanWei"  class="select"  style="width:60px;height:28px;">
+                            <option value="1">ºC</option>
+                            <option value="2">ºF</option>
+                        </select>
+                        <br />
+                        <div id="AmTemperatureRangeTips" style="float:left;"></div>
+                    </th>
+	            </tr>
+                <tr id="AmHumidity" style="display:none;">
+                    <th id="AmHumidityT" style="width:210px;"></th>
+                    <th>
+                        <input id="AmHumidityLow" style="width:60px;float:left; margin-left:15px"  class="select" maxlength="3" onkeyup="rpPos(this,/[^0-9]/g,'');if(value*1>100)value=100;" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/>
+                        <div style="float:left;text-indent:-2px;">%</div>
+	                    <div style="float:left;">~</div>
+                        <input id="AmHumidityHigh" style="width:60px;float:left; margin-left:5px"  class="select" maxlength="3" onkeyup="rpPos(this,/[^0-9]/g,'');if(value*1>100)value=100;" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^0-9]/g,''))"/>
+	                    <div style="float:left;text-indent:-2px;">%</div>
+                        <br />
+                        <div id="AmHumidityTips" style="float:left;"></div>
+                    </th>
+                </tr>
+	            <tr>
+	                <th width="180" id="AmTrger"></th>
+	                <th>
+                        <select id="Amtrigger" class="select">
+	        	            <option value="0">5s</option>
+	                        <option value="1">6s</option>
+	                        <option value="2">7s</option>
+	                        <option value="3">8s</option>
+	                        <option value="4">9s</option>
+	                        <option value="5">10s</option>
+	                        <option value="6">11s</option>
+	                        <option value="7">12s</option>
+	                        <option value="8">13s</option>
+	                        <option value="9">14s</option>
+	                        <option value="10">15s</option>
+	                    </select>
+                    </th>
+	            </tr>
+	            <tr>
+	                <th rowspan="6" width="180" id="AmTactics"></th>
+	                <th style="border-top:0px solid #70c8e6;border-bottom: 0px solid #70c8e6;"></th>
+	            </tr>
+	            <tr id="ambjls">
+	                <th>
+                        <div id="AmRing" style="float:left;"></div>
+                        <input id="AmLink1" type="checkbox" style="float:left; margin-top:6px;" />
+                        
+                        <div style="float:left; margin-left:100px; display:none;" id="divAlarmPCSound"></div>
+                        <input type="checkbox" id="chkAlarmPCSound" style="float:left;margin-top:6px; display:none;" />
+                        
+                        <div style="float:left; margin-left:100px; display:none;" id="divAlarmPCSound_ioalarm"></div>
+                        <input type="checkbox" id="chkAlarmPCSound_ioalarm" style="float:left;margin-top:6px;display:none;" />
+                        
+                        <div style="float:left; margin-left:100px; display:none;" id="divAlarmPCSound_sudalarm"></div>
+                        <input type="checkbox" id="chkAlarmPCSound_sudalarm" style="float:left;margin-top:6px; display:none;" />
+                        
+                        <div style="float:left; margin-left:100px;  display:none;" id="divAlarmPCSound_tmpalarm"></div>
+                        <input type="checkbox" id="chkAlarmPCSound_tmpalarm" style="float:left;margin-top:6px; display:none;" />
+
+                        <div style="float:left; margin-left:100px;  display:none;" id="divAlarmPCSound_humalarm"></div>
+                        <input type="checkbox" id="chkAlarmPCSound_humalarm" style="float:left;margin-top:6px; display:none;" />
+                    </th>
+	            </tr>
+	            <tr>
+	                <th id="AmSedEmail"><input id="AmLink2" type="checkbox" /></th>
+	            </tr>
+	            <tr id="captImgTr">
+	                <th>
+                        <div id="AmCaptImg" style="float:left"></div>
+                        <input id="AmLink3" type="checkbox" style="float:left; margin-top:6px;" />
+	                    <div style="float:left;margin-left:100px;margin-right:10px;" id="AmCapttime"></div>
+                        <select style="float:left;margin-top:2px;" id="AmCTime">
+                            <option value="1">1s</option>
+                            <option value="2">2s</option>
+                            <option value="3">3s</option>
+                            <option value="4">4s</option>
+                            <option value="5">5s</option>
+                        </select>
+	                    <br />
+                        <div id="divAlarmSnapTips" style="text-align:left"></div>
+	                </th>
+	            </tr>
+	            <tr id = "AmRecordTR">
+	                <th>
+	                    <div id="AmRecord" style="float:left"></div><input id="AmLink4" type="checkbox" style="float:left; margin-top:6px;" />
+                        <br />
+                        <div id="divAlarmRecordTips" style="text-align:left;"></div>
+	                </th>
+	            </tr>
+                <tr id="AmToPhoneTR" style="display:none;">
+                    <th>
+                        <div style="float:left" id="AmToPhone"></div><input id="AmLink8" type="checkbox" style="float:left; margin-top:6px;" />
+                    </th>
+                </tr>
+	            <tr id="AmIOOutputTR">
+	            	<th></th>
+	                <th>
+	                    <div id="AmIOOutput" style="float:left;"></div>
+	                    <input id="AmLink5" type="checkbox" style="float:left; margin-top:6px;" />
+	                    <button id="AmClearIO" style="float:left; margin-left:102px;"></button>
+	                </th>
+	            </tr>
+	        </table>
+	        <table id="Table2" class="bssystab" style="width:729px;border-top:0px;"> 
+	            <tr id="Amzcbut">
+	                <th width="180">
+	                    <div id="AmZCNAME" ></div>
+	                </th>
+	                <th>
+	                    <div style="float:left;"><button id="AmZC"></button></div>
+                        <div id="AmzcMotionText" style="float:left; display:none;"></div>
+	                </th>
+	            </tr>
+	        </table>
+	    
+	    <div id="AmDiv">
+	    <div style="width:19px; height:18px;overflow:hidden;float:left;margin:6px 10px 0px 300px; background:url(../../images/time.gif); display:inline;"></div><div style="height:40px; float:left;overflow:hidden; " id="AmVCBitmap"></div>
+	    <div style="height:240px; width:100%;font-family:Arial;">
+	    	<div id="AmXq" style="float:left;clear:left; width:57px; height:200px;"></div>
+	        <div style="float:left; background:url(../../images/cb3.gif) repeat">
+	        	<div id="AmHead" style="height:23px;+height:25px;"></div>
+	            <div id="am_DivBox"></div>
+	        </div>
+	    </div>
+	    </div>
+        <div id="rcTempTips" style="float:left;display:none;"></div>
+        <div id="rcTempTips_F" style="float:left;display:none;"></div>
+        <div id="rcTempTips_H" style="float:left;display:none;"></div>
+        </br>
+       <div id="rcAlarmNotice" style="float:left;font-family:Arial;"></div>
+	</div>
+</fieldset>  

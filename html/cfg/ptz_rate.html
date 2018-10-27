@@ -1,0 +1,51 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="PTZRatet"></div></strong></font></legend>
+	<div class="config_content">
+	    <div class="login"></div>
+	    <div class="item" >
+
+	           <div class="item_R">
+                   <input id="ptzrateRf" type="button" class="logo_refresh" />
+                   <input id="PTZRateSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv"></div> 
+	    <table class="bssystab" style="font-family:Arial;">
+	        <tr>
+	            <th width="230" id="PTZRateSetUp" class="table_left_bgcolor"></th>
+                <th width="230" id="PTZRateFocus" class="table_left_bgcolor" style="display:none;"></th>
+	            <th>
+	                <select id="PTZRateSet" class="select">
+	        	        <option value="0" id="PTZRateVFast"></option>
+	                    <option value="1" id="PTZRateFast"></option>
+	                    <option value="2" id="PTZRateMS"></option>
+	                    <option value="3" id="PTZRateSlow"></option>
+	                    <option value="4" id="PTZRateVSlow"></option>
+	                </select>
+	            </th>
+	        </tr>
+	        <!--增加自动聚焦开关 begin-->
+	        <tr id="AutoZoon">
+            <th width="230" id="AutoZoonSetUp" class="table_left_bgcolor"></th>
+	            <th>
+	                <select id="IsAutoZoon" class="select">
+                        <option value="0" id="CloseAutoZoon"></option>
+	        	        <option value="1" id="OpneAutoZoon"></option>
+	                </select>
+	            </th>
+            </tr>
+	        <!--增加自动聚焦开关 end-->
+	        <tr id="ZRateSetTR">
+	            <th id="ZRateSetUp" class="table_left_bgcolor"></th>
+                <th id="ZRateFocusSetUp" class="table_left_bgcolor" style="display:none;"></th>
+                <th>
+                    <select id="ZRateSet" class="select">
+	        	        <option value="0" id="ZRateFast"></option>
+	                    <option value="1" id="ZRateMS"></option>
+	                    <option value="2" id="ZRateSlow"></option>
+	                </select>
+	            </th>
+	        </tr>
+	    </table>
+	</div>
+</fieldset>      

@@ -1,0 +1,78 @@
+<fieldset>  
+	<legend><font size=5px color="#4793e7"><strong><div id="AvCapturt"></div></strong></font></legend>
+
+	<div class="config_content" style=" height:560px;width:800px;">
+	    <div class="login"></div>
+	    <div class="item_S" >
+	           <div class="item_R">
+                   <input id="avcapturRf" type="button" class="logo_refresh" />
+                   <input id="avCaptSave" type="button" class="logo_save" />
+	           </div>
+	    </div>
+	    <div class="bssysdiv_S"></div> 
+	    <table id="netTable" class="bssystab" style="width:729px;">
+	        <tr>
+	        <th width="180" id="AvCaptImgQua" class="table_left_bgcolor"></th>
+	        <th><select id="avcaqua"  class="select">
+	        <option value="0"></option>
+	            <option value="1"></option>
+	            <option value="2"></option>
+	            </select></th>
+	        </tr>
+	        <tr>
+	            <th id="AvCaptPath" class="table_left_bgcolor"></th>
+	            <th>
+                    <select id="avcapath" class="select">
+	        	        <option id="AvCapNull" value="65535"></option>
+                        <option id="AvCaptSDCard" value="0"></option>
+	                    <option id="AvCaptFtp" value="2">FTP</option>
+                        <option id="AvCapSDAndCloud" value="3"></option>
+	                </select>
+                    <br />
+                    <div id="divCapPathTips" style="font-family:Arial;text-align:left;display:none;"></div>
+                    <div id="divCapPathSoftTips" style="font-family:Arial;text-align:left;display:none;color:#FF0000;"></div>
+                </th>
+	        </tr>
+	    </table>
+	    
+	    <div id="Tamtable">
+	    <div style="text-align:left;clear:left; float:left;" id="TAlarmIsEb"></div><input id="TAmIsEnable" type="checkbox" style="float:left; margin-top:8px;"/></div>
+        <br />
+	    <table id="TAlmTabel" class="bssystab" style="width:729px;">
+	        <tr>
+	            <th width="180" id="TAm_Interval"></th>
+	            <th id = "isAmba" >
+	            	<input id="TAmCTime" maxlength="5" onkeyup="rpPos(this,/\D/g,''); if(value*1>65535)value=65535; " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/\D/g,''))" />(1-65535s)
+	            </th>
+	            <th id = "isHisi" style="display:none;">
+	            <input id="TAmCTimeE" maxlength="5" onkeyup="rpPos(this,/\D/g,''); if(value*1>65535)value=65535;" onblur="if(value*1<5)value=5;" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/\D/g,''))" />(5-65535s)
+	            </th>
+	        </tr>
+	 
+	    </table>
+	    
+	    <div id="setFileName" style="display:none">
+	    <div style="text-align:left;clear:left; float:left;" id="FileNameTitle"></div><input id="FileNameIsEnable" type="checkbox" style="float:left; margin-top:8px;"/></div>
+        <br />
+	    <table id="FileNameTable" class="bssystab" style="width:729px; display:none;" >
+	        <tr>
+	            <th width="180" id="FileNameText"></th>
+	            <th><input id="FileNameInput" /></th>
+	        </tr>
+	    </table>
+
+	    <div id="TAmDiv">
+	    <div style="width:19px; height:18px;overflow:hidden;float:left;margin:6px 10px 0px 300px; background:url(../../images/time.gif); display:inline;"></div><div style="height:40px; float:left;overflow:hidden; " id="TAmVCBitmap"></div>
+	    <div style="height:300px;font-family:Arial;">
+	    	<div id="TAmXq" style="float:left;clear:left; width:57px; height:300px;"></div>
+	        <div style="float:left; background:url(../../images/cb3.gif) repeat">
+	        	<div id="TAmHead" style="height:23px;+height:25px;"></div>
+	            <div id="Tam_DivBox"></div>
+	        </div>
+	    </div>
+	    </div>
+	   
+	   
+	    
+	</div>
+</fieldset> 

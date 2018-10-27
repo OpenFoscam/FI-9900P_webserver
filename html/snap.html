@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="../js/ansiUrlCodec.js" type="text/javascript"></script>
+<script>
+	function getCookie(name) 
+	{ 
+		var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)")); 
+		if (arr != null) return urlDecode(arr[2]); 
+		return null; 
+	}
+	function load()
+	{
+		var snapFrame = document.getElementById("snapFrame");
+        snapFrame.src = window.opener.document.getElementById("hdvalue").value;
+        
+		//snapFrame.src = getCookie("snapcmd")
+		//snapFrame.src = window.opener.document.all.maintext.value
+	}
+</script>
+</head>
+<body onload="load()">
+<img id="snapFrame" src=""  alt=""/>
+</body>
+</html>
